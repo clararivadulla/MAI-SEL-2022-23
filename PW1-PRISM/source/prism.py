@@ -11,7 +11,8 @@ def fit(x):
 
         P[C_i] = {}
 
-        i = 0
+        i = 1
+
         while not E.empty:  # while E ≠ ∅
 
             perfect = False
