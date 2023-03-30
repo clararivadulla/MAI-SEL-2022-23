@@ -1,23 +1,15 @@
 ,Rule,Class,Precision,Recall,Coverage
-0,if physician-fee-freeze == y and synfuels-corporation-cutback == n then,republican,100.0,83.52,41.08
-1,if physician-fee-freeze == n and handicapped-infants == n then,democrat,100.0,41.49,21.08
-2,if synfuels-corporation-cutback == y and crime == y and handicapped-infants == y and physician-fee-freeze == n then,democrat,100.0,9.57,4.86
-3,if synfuels-corporation-cutback == y and physician-fee-freeze == y and adoption-of-the-budget-resolution == n and superfund-right-to-sue == y and handicapped-infants == y then,republican,100.0,2.2,1.08
-4,if synfuels-corporation-cutback == y and physician-fee-freeze == y and crime == n then,republican,100.0,1.1,0.54
-5,if synfuels-corporation-cutback == y and physician-fee-freeze == y and anti-satellite-test-ban == y and aid-to-nicaraguan-contras == n then,republican,100.0,1.1,0.54
-6,if synfuels-corporation-cutback == y and export-administration-act-south-africa == n and superfund-right-to-sue == n then,democrat,100.0,1.06,0.54
-7,if handicapped-infants == y and crime == y and el-salvador-aid == n and immigration == n then,democrat,100.0,1.06,0.54
-8,if religious-groups-in-schools == n and crime == y and physician-fee-freeze == n and handicapped-infants == y and adoption-of-the-budget-resolution == y and synfuels-corporation-cutback == n then,democrat,100.0,1.06,0.54
-9,if handicapped-infants == y and crime == n then,democrat,94.44,40.43,20.54
-10,if synfuels-corporation-cutback == y and physician-fee-freeze == y and handicapped-infants == n and adoption-of-the-budget-resolution == n and superfund-right-to-sue == y and immigration == y and crime == y then,republican,0.0,4.4,2.16
-11,if synfuels-corporation-cutback == y and physician-fee-freeze == y and duty-free-exports == y then,republican,0.0,2.2,1.08
-12,if synfuels-corporation-cutback == y and physician-fee-freeze == y and adoption-of-the-budget-resolution == n and immigration == y and water-project-cost-sharing == n then,republican,0.0,1.1,0.54
-13,if synfuels-corporation-cutback == y and physician-fee-freeze == y and el-salvador-aid == n and adoption-of-the-budget-resolution == y then,republican,0.0,1.1,0.54
-14,if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and handicapped-infants == n and export-administration-act-south-africa == y and water-project-cost-sharing == n then,republican,0.0,1.1,0.54
-15,if adoption-of-the-budget-resolution == n and el-salvador-aid == n and duty-free-exports == n and physician-fee-freeze == n then,republican,0.0,1.1,0.54
-16,if synfuels-corporation-cutback == y and export-administration-act-south-africa == n and water-project-cost-sharing == y and immigration == n and handicapped-infants == n and superfund-right-to-sue == y then,republican,0.0,1.1,0.54
-17,if synfuels-corporation-cutback == y and export-administration-act-south-africa == n and adoption-of-the-budget-resolution == y then,democrat,0.0,1.06,0.54
-18,if synfuels-corporation-cutback == y and physician-fee-freeze == y and mx-missile == y and handicapped-infants == n then,democrat,0.0,1.06,0.54
-19,if handicapped-infants == y and crime == y and el-salvador-aid == n and synfuels-corporation-cutback == n and religious-groups-in-schools == y then,democrat,0.0,1.06,0.54
-20,if synfuels-corporation-cutback == y and export-administration-act-south-africa == n and water-project-cost-sharing == n and handicapped-infants == n and physician-fee-freeze == y then,democrat,0.0,1.06,0.54
-21,if handicapped-infants == y and education-spending == y and adoption-of-the-budget-resolution == y and anti-satellite-test-ban == n then,democrat,0.0,1.06,0.54
+0,if physician-fee-freeze == y and synfuels-corporation-cutback == n then,republican,100.0,84.09,40.0
+1,if synfuels-corporation-cutback == y and physician-fee-freeze == y and adoption-of-the-budget-resolution == y and anti-satellite-test-ban == n then,democrat,100.0,1.03,0.54
+2,if physician-fee-freeze == n then,democrat,96.15,95.88,50.27
+3,if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == y then,republican,60.0,7.95,3.78
+4,if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and duty-free-exports == y then,republican,0.0,1.14,0.54
+5,if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and aid-to-nicaraguan-contras == n and anti-satellite-test-ban == y then,republican,0.0,1.14,0.54
+6,if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and water-project-cost-sharing == n and handicapped-infants == y then,republican,0.0,1.14,0.54
+7,if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and anti-satellite-test-ban == n and education-spending == n then,republican,0.0,1.14,0.54
+8,if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and anti-satellite-test-ban == n and handicapped-infants == n and export-administration-act-south-africa == y then,republican,0.0,1.14,0.54
+9,if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and water-project-cost-sharing == y and export-administration-act-south-africa == n and superfund-right-to-sue == y then,republican,0.0,1.14,0.54
+10,if synfuels-corporation-cutback == y and physician-fee-freeze == y and handicapped-infants == y and adoption-of-the-budget-resolution == n and education-spending == y and water-project-cost-sharing == y then,republican,0.0,1.14,0.54
+11,if synfuels-corporation-cutback == y and physician-fee-freeze == y and el-salvador-aid == n and adoption-of-the-budget-resolution == n then,democrat,0.0,1.03,0.54
+12,if export-administration-act-south-africa == n and superfund-right-to-sue == n and religious-groups-in-schools == y then,democrat,0.0,1.03,0.54
+13,if export-administration-act-south-africa == n and synfuels-corporation-cutback == y and water-project-cost-sharing == n and handicapped-infants == n and physician-fee-freeze == y then,democrat,0.0,1.03,0.54

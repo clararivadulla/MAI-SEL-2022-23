@@ -27,6 +27,7 @@ def prism(x):
             while not perfect and available_attr:
 
                 max_val_tmp = 0
+                max_positive = 0
                 max_attr_vals = (None, None)
 
                 for attr in available_attr:
@@ -55,7 +56,13 @@ def prism(x):
 
                         if p_t > max_val_tmp:
                             max_val_tmp = p_t
+                            max_positive = positive
                             max_attr_vals = (attr, val)
+
+                        elif p_t == max_val_tmp:
+                            if max_positive < positive:
+                                max_positive = positive
+                                max_attr_vals = (attr, val)
 
                 rule_attr_vals.append(max_attr_vals)
                 available_attr.remove(max_attr_vals[0])

@@ -1,4 +1,4 @@
 ,Rule,Class,Precision,Recall,Coverage
-0,if V3 == o and V5 == o and V7 == o then,negative,100.0,15.07,5.35
-1,if V5 == o and V1 == o and V9 == o then,negative,100.0,14.71,5.22
-2,if V2 == o and V5 == o and V8 == o then,negative,100.0,11.03,3.92
+0,if V5 == o and V1 == o and V9 == o then,negative,100.0,15.33,5.22
+1,if V5 == o and V3 == o and V7 == o then,negative,100.0,14.56,4.96
+2,if V5 == x and V9 == x and V1 == x then,positive,100.0,13.66,9.01

@@ -1,4 +1,4 @@
 ,Rule,Class,Precision,Recall,Coverage
-0,if physician-fee-freeze == y and synfuels-corporation-cutback == n then,republican,100.0,83.52,41.08
-1,if physician-fee-freeze == n and handicapped-infants == n then,democrat,100.0,41.49,21.08
-2,if synfuels-corporation-cutback == y and crime == y and handicapped-infants == y and physician-fee-freeze == n then,democrat,100.0,9.57,4.86
+0,if physician-fee-freeze == y and synfuels-corporation-cutback == n then,republican,100.0,84.09,40.0
+1,if synfuels-corporation-cutback == y and physician-fee-freeze == y and adoption-of-the-budget-resolution == y and anti-satellite-test-ban == n then,democrat,100.0,1.03,0.54
+2,if physician-fee-freeze == n then,democrat,96.15,95.88,50.27

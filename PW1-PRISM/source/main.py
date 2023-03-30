@@ -4,7 +4,7 @@ import string
 import pandas as pd
 import numpy as np
 
-np.random.seed(1001)
+np.random.seed(2012)
 path = "/Users/clararivadulla/Repositories/MAI-SEL-2022-23/PW1-PRISM"
 
 
