@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def fit(x):
+def prism(x):
     P = {}  # Prism ← ∅
     C = x['class'].unique()  # unique classes
 
@@ -71,7 +71,6 @@ def fit(x):
             E = E[E['_merge'] == 'left_only'].drop('_merge', axis=1)
 
             P[C_i][i] = rule_attr_vals
-
             i += 1
 
     return P
@@ -99,12 +98,3 @@ def predict_class(xi, P):
             if (satisfy):
                 return C_i
     return None
-
-
-def accuracy(predicted, y):
-    y = list(y)
-    correct = 0
-    for i in range(len(predicted)):
-        if predicted[i] == y[i]:
-            correct += 1
-    return correct / len(predicted)
