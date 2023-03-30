@@ -1,0 +1,80 @@
+,Rule,Class,Precision,Recall,Coverage
+0,if stalk-surface-below-ring == k then,p,100.0,61.21,23.1
+1,if stalk-color-above-ring == g then,e,100.0,16.12,10.03
+2,if odor == l then,e,100.0,11.85,7.38
+3,if odor == a then,e,100.0,11.63,7.24
+4,if odor == p then,p,100.0,11.21,4.23
+5,if ring-type == e and population == s then,e,100.0,11.17,6.95
+6,if population == a then,e,100.0,10.46,6.51
+7,if odor == c then,p,100.0,8.74,3.3
+8,if stalk-color-above-ring == p and stalk-color-below-ring == w then,e,100.0,5.69,3.54
+9,if cap-color == e and stalk-color-above-ring == w then,e,100.0,5.59,3.48
+10,if cap-color == b then,p,100.0,5.46,2.06
+11,if stalk-color-below-ring == g and stalk-color-above-ring == p then,e,100.0,5.37,3.34
+12,if cap-color == w and odor == f and habitat == g then,p,100.0,2.17,0.82
+13,if cap-color == g and stalk-color-below-ring == g and stalk-color-above-ring == w then,e,100.0,1.99,1.24
+14,if stalk-color-below-ring == g and stalk-color-above-ring == w and cap-color == n then,e,100.0,1.96,1.22
+15,if stalk-color-below-ring == p and stalk-color-above-ring == w and cap-color == g then,e,100.0,1.89,1.17
+16,if stalk-color-below-ring == p and stalk-color-above-ring == w and cap-color == n then,e,100.0,1.74,1.09
+17,if cap-color == n and habitat == d and stalk-color-below-ring == w and stalk-color-above-ring == w then,e,100.0,1.74,1.09
+18,if odor == m then,p,100.0,1.47,0.55
+19,if stalk-color-below-ring == p and gill-color == w and stalk-color-above-ring == p then,e,100.0,1.42,0.89
+20,if gill-color == u and stalk-color-above-ring == p and stalk-color-below-ring == p then,e,100.0,1.39,0.86
+21,if stalk-color-below-ring == p and gill-color == n and stalk-color-above-ring == p then,e,100.0,1.35,0.84
+22,if habitat == u and stalk-surface-below-ring == f and cap-color == w then,p,100.0,1.23,0.47
+23,if spore-print-color == r and cap-color == p then,p,100.0,1.17,0.44
+24,if habitat == u and odor == f and cap-color == g and stalk-surface-above-ring == s then,p,100.0,1.17,0.44
+25,if cap-surface == s and odor == f and cap-color == g and habitat == g and stalk-surface-above-ring == s then,p,100.0,1.06,0.4
+26,if habitat == u and stalk-surface-above-ring == f and cap-color == g then,p,100.0,1.0,0.38
+27,if stalk-surface-above-ring == f and bruises == t and habitat == g and cap-color == g then,p,100.0,1.0,0.38
+28,if cap-shape == s then,e,100.0,0.92,0.58
+29,if cap-color == g and bruises == t and stalk-color-below-ring == w and stalk-color-above-ring == w and cap-surface == f then,e,100.0,0.85,0.53
+30,if habitat == l and cap-color == n then,e,100.0,0.64,0.4
+31,if habitat == u and population == y and cap-shape == f then,e,100.0,0.5,0.31
+32,if habitat == u and cap-surface == f and cap-shape == f and population == v then,e,100.0,0.46,0.29
+33,if stalk-color-above-ring == p and gill-color == p and stalk-color-below-ring == p and cap-color == n then,e,100.0,0.46,0.29
+34,if stalk-color-above-ring == p and gill-color == p and stalk-color-below-ring == p and cap-color == e then,e,100.0,0.46,0.29
+35,if cap-color == g and bruises == t and gill-color == p and stalk-color-above-ring == p and stalk-color-below-ring == p then,e,100.0,0.46,0.29
+36,if spore-print-color == r and cap-color == w and gill-color == w then,p,100.0,0.41,0.16
+37,if spore-print-color == r and cap-color == w and gill-color == g then,p,100.0,0.35,0.13
+38,if gill-color == r and cap-color == w then,p,100.0,0.29,0.11
+39,if spore-print-color == w and cap-color == g then,e,100.0,0.25,0.16
+40,if spore-print-color == w and cap-color == p then,e,100.0,0.25,0.16
+41,if habitat == u and cap-surface == f and cap-shape == x and gill-color == n then,e,100.0,0.25,0.16
+42,if spore-print-color == w and habitat == p and cap-color == n and bruises == t then,e,100.0,0.25,0.16
+43,if cap-color == g and bruises == t and cap-surface == y and stalk-color-below-ring == w and stalk-color-above-ring == w and gill-color == n then,e,100.0,0.25,0.16
+44,if habitat == u and gill-color == g and cap-shape == x then,e,100.0,0.21,0.13
+45,if habitat == u and gill-color == k and cap-shape == x and cap-surface == f then,e,100.0,0.21,0.13
+46,if gill-color == u and cap-color == g and stalk-color-above-ring == w and cap-surface == y and stalk-color-below-ring == w then,e,100.0,0.21,0.13
+47,if gill-color == p and cap-color == g and stalk-color-above-ring == w and cap-surface == y and stalk-color-below-ring == w then,e,100.0,0.21,0.13
+48,if habitat == u and cap-color == w and stalk-surface-above-ring == f and stalk-surface-below-ring == s and gill-color == w then,p,100.0,0.18,0.07
+49,if habitat == u and cap-color == w and gill-color == p and stalk-surface-above-ring == f and stalk-surface-below-ring == s then,p,100.0,0.18,0.07
+50,if habitat == u and cap-color == w and odor == f and stalk-surface-below-ring == s and stalk-surface-above-ring == s and gill-color == w then,p,100.0,0.18,0.07
+51,if habitat == u and gill-color == p and cap-color == w and odor == f and stalk-surface-below-ring == s and stalk-surface-above-ring == s then,p,100.0,0.18,0.07
+52,if habitat == u and cap-surface == f and gill-color == p and cap-shape == x then,e,100.0,0.18,0.11
+53,if cap-color == c and stalk-surface-below-ring == f and cap-surface == y then,e,100.0,0.14,0.09
+54,if cap-color == c and cap-surface == y and bruises == t then,e,100.0,0.11,0.07
+55,if stalk-color-above-ring == y and cap-shape == k then,p,100.0,0.06,0.02
+56,if stalk-surface-above-ring == y and cap-shape == k and cap-surface == s then,e,100.0,0.04,0.02
+57,if stalk-surface-above-ring == y and habitat == d and cap-shape == f then,e,100.0,0.04,0.02
+58,if stalk-surface-above-ring == y and cap-shape == b and cap-surface == s then,e,100.0,0.04,0.02
+59,if stalk-surface-above-ring == y and cap-shape == k and habitat == d then,e,100.0,0.04,0.02
+60,if stalk-surface-above-ring == y and habitat == p and cap-shape == f then,e,100.0,0.04,0.02
+61,if cap-color == c and stalk-surface-below-ring == s and cap-surface == y and cap-shape == k then,e,100.0,0.04,0.02
+62,if cap-color == n and cap-shape == b and cap-surface == y then,e,100.0,0.04,0.02
+63,if habitat == u and gill-color == h and cap-color == w and stalk-surface-below-ring == s then,p,0,0.47,0.18
+64,if cap-color == c and cap-surface == f then,e,0,0.43,0.27
+65,if cap-color == g and gill-color == w and cap-surface == y and stalk-color-below-ring == w and stalk-color-above-ring == w and stalk-shape == t then,e,0,0.28,0.18
+66,if cap-shape == c then,p,0,0.23,0.09
+67,if stalk-surface-above-ring == y and cap-shape == x then,e,0,0.14,0.09
+68,if cap-color == c and cap-surface == s then,e,0,0.14,0.09
+69,if stalk-color-above-ring == y and cap-shape == f then,p,0,0.12,0.04
+70,if stalk-color-above-ring == y and cap-shape == b then,p,0,0.12,0.04
+71,if cap-color == c and cap-shape == f and stalk-surface-below-ring == s and cap-surface == y and bruises == f then,e,0,0.07,0.04
+72,if cap-surface == g and cap-shape == f then,p,0,0.06,0.02
+73,if cap-surface == g and cap-shape == k then,p,0,0.06,0.02
+74,if cap-surface == g and cap-shape == b then,p,0,0.06,0.02
+75,if population == c and cap-color == w and cap-surface == y and cap-shape == f then,p,0,0.06,0.02
+76,if population == c and cap-shape == b and cap-color == w and cap-surface == y then,p,0,0.06,0.02
+77,if cap-shape == k and cap-color == w and cap-surface == y then,p,0,0.06,0.02
+78,if stalk-surface-above-ring == y and cap-shape == k and habitat == p and cap-surface == y then,e,0,0.04,0.02

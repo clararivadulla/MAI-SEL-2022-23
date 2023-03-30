@@ -1,0 +1,4 @@
+,Rule,Class,Precision,Recall,Coverage
+0,if stalk-surface-below-ring == k then,p,100.0,61.21,23.1
+1,if stalk-color-above-ring == g then,e,100.0,16.12,10.03
+2,if odor == l then,e,100.0,11.85,7.38

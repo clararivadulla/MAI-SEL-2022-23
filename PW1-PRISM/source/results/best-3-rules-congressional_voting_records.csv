@@ -1,0 +1,4 @@
+,Rule,Class,Precision,Recall,Coverage
+0,if physician-fee-freeze == y and synfuels-corporation-cutback == n then,republican,100.0,83.52,41.08
+1,if physician-fee-freeze == n and handicapped-infants == n then,democrat,100.0,41.49,21.08
+2,if synfuels-corporation-cutback == y and crime == y and handicapped-infants == y and physician-fee-freeze == n then,democrat,100.0,9.57,4.86

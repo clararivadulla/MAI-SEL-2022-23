@@ -1,0 +1,649 @@
+/Users/clararivadulla/.pyenv/versions/3.7.13/bin/python /Users/clararivadulla/Repositories/MAI-SEL-2022-23/PW1-PRISM/source/main.py
+*************************************
+Congressional Voting Records Data Set
+*************************************
+Accuracy: 97.87%
+Train size: 185
+Test size: 47
+Rules -------------------------------
+1: if physician-fee-freeze == y and synfuels-corporation-cutback == n -> class = republican | Train Precision: 100.0% Test Precision: 100.0% Coverage: 41.08% Recall: 83.52%
+2: if synfuels-corporation-cutback == y and physician-fee-freeze == y and crime == n -> class = republican | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.54% Recall: 1.1%
+3: if synfuels-corporation-cutback == y and physician-fee-freeze == y and duty-free-exports == y -> class = republican | Train Precision: 100.0% Test Precision: 0% Coverage: 1.08% Recall: 2.2%
+4: if synfuels-corporation-cutback == y and physician-fee-freeze == y and adoption-of-the-budget-resolution == n and immigration == y and water-project-cost-sharing == n -> class = republican | Train Precision: 100.0% Test Precision: 0% Coverage: 0.54% Recall: 1.1%
+5: if synfuels-corporation-cutback == y and physician-fee-freeze == y and adoption-of-the-budget-resolution == n and superfund-right-to-sue == y and handicapped-infants == y -> class = republican | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.08% Recall: 2.2%
+6: if synfuels-corporation-cutback == y and physician-fee-freeze == y and handicapped-infants == n and adoption-of-the-budget-resolution == n and superfund-right-to-sue == y and immigration == y and crime == y -> class = republican | Train Precision: 100.0% Test Precision: 0% Coverage: 2.16% Recall: 4.4%
+7: if synfuels-corporation-cutback == y and physician-fee-freeze == y and el-salvador-aid == n and adoption-of-the-budget-resolution == y -> class = republican | Train Precision: 100.0% Test Precision: 0% Coverage: 0.54% Recall: 1.1%
+8: if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and handicapped-infants == n and export-administration-act-south-africa == y and water-project-cost-sharing == n -> class = republican | Train Precision: 100.0% Test Precision: 0% Coverage: 0.54% Recall: 1.1%
+9: if adoption-of-the-budget-resolution == n and el-salvador-aid == n and duty-free-exports == n and physician-fee-freeze == n -> class = republican | Train Precision: 100.0% Test Precision: 0% Coverage: 0.54% Recall: 1.1%
+10: if synfuels-corporation-cutback == y and export-administration-act-south-africa == n and water-project-cost-sharing == y and immigration == n and handicapped-infants == n and superfund-right-to-sue == y -> class = republican | Train Precision: 100.0% Test Precision: 0% Coverage: 0.54% Recall: 1.1%
+11: if synfuels-corporation-cutback == y and physician-fee-freeze == y and anti-satellite-test-ban == y and aid-to-nicaraguan-contras == n -> class = republican | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.54% Recall: 1.1%
+12: if physician-fee-freeze == n and handicapped-infants == n -> class = democrat | Train Precision: 100.0% Test Precision: 100.0% Coverage: 21.08% Recall: 41.49%
+13: if handicapped-infants == y and crime == n -> class = democrat | Train Precision: 100.0% Test Precision: 94.44% Coverage: 20.54% Recall: 40.43%
+14: if synfuels-corporation-cutback == y and export-administration-act-south-africa == n and adoption-of-the-budget-resolution == y -> class = democrat | Train Precision: 100.0% Test Precision: 0% Coverage: 0.54% Recall: 1.06%
+15: if synfuels-corporation-cutback == y and crime == y and handicapped-infants == y and physician-fee-freeze == n -> class = democrat | Train Precision: 100.0% Test Precision: 100.0% Coverage: 4.86% Recall: 9.57%
+16: if synfuels-corporation-cutback == y and physician-fee-freeze == y and mx-missile == y and handicapped-infants == n -> class = democrat | Train Precision: 100.0% Test Precision: 0% Coverage: 0.54% Recall: 1.06%
+17: if synfuels-corporation-cutback == y and export-administration-act-south-africa == n and superfund-right-to-sue == n -> class = democrat | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.54% Recall: 1.06%
+18: if handicapped-infants == y and crime == y and el-salvador-aid == n and immigration == n -> class = democrat | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.54% Recall: 1.06%
+19: if handicapped-infants == y and crime == y and el-salvador-aid == n and synfuels-corporation-cutback == n and religious-groups-in-schools == y -> class = democrat | Train Precision: 100.0% Test Precision: 0% Coverage: 0.54% Recall: 1.06%
+20: if synfuels-corporation-cutback == y and export-administration-act-south-africa == n and water-project-cost-sharing == n and handicapped-infants == n and physician-fee-freeze == y -> class = democrat | Train Precision: 100.0% Test Precision: 0% Coverage: 0.54% Recall: 1.06%
+21: if handicapped-infants == y and education-spending == y and adoption-of-the-budget-resolution == y and anti-satellite-test-ban == n -> class = democrat | Train Precision: 100.0% Test Precision: 0% Coverage: 0.54% Recall: 1.06%
+22: if religious-groups-in-schools == n and crime == y and physician-fee-freeze == n and handicapped-infants == y and adoption-of-the-budget-resolution == y and synfuels-corporation-cutback == n -> class = democrat | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.54% Recall: 1.06%
+
+*************************************
+Tic Tac Toe Endgame Data Set
+*************************************
+Accuracy: 71.88%
+Train size: 766
+Test size: 192
+Rules -------------------------------
+1: if V5 == x and V9 == b and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 2.09% Recall: 3.24%
+2: if V5 == x and V1 == b and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 88.89% Coverage: 3.92% Recall: 6.07%
+3: if V5 == b and V3 == x and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 75.0% Coverage: 2.48% Recall: 3.85%
+4: if V2 == b and V9 == x and V8 == o and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.04% Recall: 1.62%
+5: if V3 == b and V6 == o and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.83% Recall: 2.83%
+6: if V6 == b and V1 == x and V7 == x and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.31% Recall: 2.02%
+7: if V5 == x and V4 == o and V7 == b and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.65% Recall: 1.01%
+8: if V5 == x and V2 == b and V1 == b and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.39% Recall: 0.61%
+9: if V5 == x and V6 == b and V7 == b and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.04% Recall: 1.62%
+10: if V5 == x and V1 == o and V9 == o and V7 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.31% Recall: 2.02%
+11: if V7 == x and V4 == o and V5 == b and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.78% Recall: 1.21%
+12: if V1 == x and V5 == b and V9 == b and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.31% Recall: 2.02%
+13: if V7 == x and V5 == x and V2 == b and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+14: if V5 == x and V7 == x and V2 == x and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.7% Recall: 2.63%
+15: if V1 == x and V8 == b and V3 == x and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.31% Recall: 2.02%
+16: if V9 == x and V2 == b and V1 == b and V5 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.52% Recall: 0.81%
+17: if V9 == x and V1 == x and V5 == x and V6 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.44% Recall: 2.23%
+18: if V7 == x and V1 == x and V4 == x and V6 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.04% Recall: 1.62%
+19: if V9 == x and V7 == x and V8 == x and V4 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.17% Recall: 1.82%
+20: if V6 == b and V7 == x and V2 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.91% Recall: 1.42%
+21: if V5 == x and V8 == x and V2 == x and V7 == o and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.65% Recall: 1.01%
+22: if V2 == b and V4 == b and V1 == b and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.78% Recall: 1.21%
+23: if V5 == x and V1 == o and V9 == b and V4 == x and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.91% Recall: 1.42%
+24: if V9 == x and V1 == x and V5 == b and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+25: if V9 == x and V1 == x and V5 == x and V4 == x and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.52% Recall: 0.81%
+26: if V9 == x and V1 == x and V2 == x and V5 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.52% Recall: 0.81%
+27: if V5 == x and V8 == x and V2 == x and V7 == x and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+28: if V9 == x and V7 == x and V6 == b and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.52% Recall: 0.81%
+29: if V5 == x and V6 == b and V3 == b and V7 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.39% Recall: 0.61%
+30: if V5 == x and V8 == x and V2 == x and V9 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+31: if V5 == x and V8 == b and V6 == b and V9 == o and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+32: if V9 == x and V4 == b and V6 == b and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 80.0% Coverage: 0.26% Recall: 0.4%
+33: if V5 == x and V8 == x and V2 == x and V4 == x and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.39% Recall: 0.61%
+34: if V9 == x and V3 == x and V8 == b and V7 == b and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.13% Recall: 0.2%
+35: if V9 == x and V1 == x and V7 == x and V4 == x and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+36: if V5 == x and V8 == b and V6 == b and V1 == x and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+37: if V5 == x and V1 == o and V9 == b and V6 == o and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.26% Recall: 0.4%
+38: if V9 == x and V3 == x and V8 == b and V2 == b and V4 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+39: if V9 == x and V3 == x and V6 == x and V2 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+40: if V5 == x and V9 == x and V6 == o and V1 == x and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.04% Recall: 1.62%
+41: if V7 == x and V2 == b and V4 == o and V6 == x and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.39% Recall: 0.61%
+42: if V5 == x and V1 == o and V9 == b and V2 == x and V3 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.04% Recall: 1.62%
+43: if V1 == x and V8 == x and V6 == b and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.39% Recall: 0.61%
+44: if V8 == b and V2 == o and V6 == b and V5 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+45: if V3 == x and V7 == b and V2 == x and V8 == o and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+46: if V8 == b and V3 == x and V2 == b and V5 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.39% Recall: 0.61%
+47: if V1 == x and V6 == o and V4 == x and V3 == b and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.65% Recall: 1.01%
+48: if V3 == x and V5 == o and V7 == o and V1 == b and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 33.33% Coverage: 0.13% Recall: 0.2%
+49: if V3 == x and V1 == x and V8 == x and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.52% Recall: 0.81%
+50: if V5 == x and V8 == b and V7 == x and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+51: if V5 == x and V1 == o and V3 == x and V2 == o and V7 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.39% Recall: 0.61%
+52: if V7 == x and V2 == b and V9 == b and V1 == o and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+53: if V7 == x and V2 == b and V4 == o and V8 == b and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.39% Recall: 0.61%
+54: if V1 == x and V3 == x and V4 == x and V2 == x and V5 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.04% Recall: 1.62%
+55: if V9 == x and V4 == b and V8 == x and V3 == x and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+56: if V5 == x and V8 == x and V9 == x and V2 == x and V4 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+57: if V5 == x and V8 == x and V9 == x and V1 == x and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.52% Recall: 0.81%
+58: if V7 == x and V2 == b and V8 == x and V9 == b and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.13% Recall: 0.2%
+59: if V7 == x and V9 == x and V3 == o and V4 == b and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.65% Recall: 1.01%
+60: if V5 == x and V7 == x and V1 == x and V9 == x and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+61: if V5 == x and V7 == x and V6 == x and V3 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+62: if V5 == x and V8 == x and V7 == x and V3 == x and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.39% Recall: 0.61%
+63: if V5 == x and V8 == b and V6 == b and V4 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+64: if V4 == o and V2 == o and V5 == o and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.39% Recall: 0.61%
+65: if V5 == x and V8 == x and V2 == x and V6 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+66: if V5 == x and V8 == b and V6 == x and V3 == x and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+67: if V5 == x and V8 == x and V2 == x and V9 == x and V6 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+68: if V1 == x and V7 == x and V9 == x and V6 == b and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.26% Recall: 0.4%
+69: if V5 == x and V8 == x and V3 == b and V4 == x and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+70: if V4 == o and V7 == b and V9 == o and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.52% Recall: 0.81%
+71: if V5 == x and V7 == x and V6 == x and V2 == b and V8 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+72: if V5 == x and V8 == x and V3 == b and V9 == b and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+73: if V5 == x and V7 == x and V4 == o and V8 == b and V9 == o and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.26% Recall: 0.4%
+74: if V9 == x and V4 == b and V2 == x and V7 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.39% Recall: 0.61%
+75: if V5 == x and V8 == x and V2 == x and V6 == x and V4 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+76: if V7 == x and V1 == x and V6 == o and V4 == x and V2 == x and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.39% Recall: 0.61%
+77: if V5 == x and V8 == x and V2 == x and V6 == x and V7 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+78: if V9 == x and V7 == x and V3 == o and V5 == b and V1 == x and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.52% Recall: 0.81%
+79: if V5 == x and V3 == b and V2 == x and V9 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+80: if V5 == x and V8 == x and V3 == b and V2 == x and V6 == x and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+81: if V5 == x and V2 == o and V1 == o and V3 == x and V6 == b and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+82: if V5 == x and V4 == x and V8 == b and V7 == o and V1 == o and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+83: if V2 == b and V7 == x and V5 == b and V9 == b and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+84: if V3 == x and V2 == b and V1 == b and V4 == x and V5 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+85: if V4 == o and V5 == o and V6 == x and V7 == b and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.39% Recall: 0.61%
+86: if V5 == x and V8 == x and V2 == x and V9 == x and V7 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+87: if V5 == x and V8 == x and V3 == b and V6 == b and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+88: if V5 == x and V4 == x and V1 == x and V6 == x and V9 == o and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+89: if V3 == x and V2 == b and V1 == b and V6 == b and V4 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+90: if V9 == x and V8 == x and V6 == x and V7 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+91: if V9 == x and V4 == b and V1 == o and V5 == o and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.39% Recall: 0.61%
+92: if V5 == x and V2 == o and V6 == o and V3 == o and V4 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+93: if V5 == x and V4 == x and V3 == b and V6 == b and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+94: if V3 == x and V2 == b and V9 == x and V8 == x and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+95: if V5 == x and V2 == o and V6 == o and V3 == o and V7 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+96: if V8 == b and V9 == b and V3 == b and V5 == o -> class = positive | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.13% Recall: 0.2%
+97: if V5 == x and V2 == o and V1 == o and V4 == o and V6 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+98: if V5 == x and V4 == x and V3 == x and V7 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+99: if V8 == b and V4 == x and V3 == x and V1 == x and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+100: if V5 == x and V9 == x and V2 == x and V1 == b and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+101: if V5 == x and V1 == o and V3 == b and V9 == b and V6 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+102: if V8 == b and V9 == b and V6 == o and V3 == o and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+103: if V3 == x and V1 == x and V6 == b and V9 == x and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+104: if V3 == x and V6 == x and V2 == x and V1 == x and V7 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+105: if V5 == x and V4 == x and V6 == x and V2 == x and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+106: if V3 == x and V6 == x and V2 == x and V9 == x and V4 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+107: if V3 == x and V1 == x and V2 == x and V6 == x and V8 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+108: if V5 == x and V2 == o and V1 == o and V8 == o and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+109: if V8 == b and V2 == o and V6 == b and V5 == b -> class = positive | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.13% Recall: 0.2%
+110: if V4 == b and V3 == o and V1 == b and V7 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+111: if V3 == x and V8 == b and V4 == x and V1 == x and V2 == o and V5 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+112: if V9 == x and V2 == x and V4 == b and V5 == b and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+113: if V9 == x and V2 == b and V5 == b and V3 == o and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+114: if V5 == x and V7 == x and V6 == x and V3 == x and V8 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+115: if V8 == b and V9 == x and V6 == b and V3 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+116: if V5 == x and V7 == x and V9 == x and V1 == x and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+117: if V5 == x and V7 == x and V6 == x and V9 == b and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.39% Recall: 0.61%
+118: if V9 == x and V2 == b and V1 == o and V3 == o and V8 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+119: if V3 == x and V2 == b and V7 == b and V1 == b and V5 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+120: if V4 == b and V1 == x and V6 == b and V7 == b and V5 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+121: if V5 == x and V4 == x and V7 == x and V3 == x and V6 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+122: if V9 == x and V4 == b and V8 == b and V6 == o and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+123: if V1 == x and V4 == b and V6 == b and V5 == x and V8 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+124: if V9 == x and V4 == b and V2 == x and V5 == x and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+125: if V1 == x and V4 == b and V9 == x and V6 == b and V2 == x and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+126: if V8 == b and V7 == b and V1 == b and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+127: if V1 == x and V4 == b and V7 == x and V2 == b and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+128: if V1 == x and V4 == b and V9 == x and V3 == o and V6 == o and V8 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.4%
+129: if V4 == o and V1 == o and V5 == o and V3 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+130: if V1 == x and V3 == x and V6 == x and V8 == b and V9 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+131: if V8 == x and V9 == b and V6 == b and V1 == x and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+132: if V3 == x and V8 == x and V4 == x and V7 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+133: if V5 == x and V4 == x and V3 == b and V1 == x and V8 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+134: if V9 == x and V7 == x and V2 == b and V6 == b and V1 == b and V4 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+135: if V5 == x and V4 == x and V7 == x and V8 == x and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+136: if V9 == x and V7 == x and V2 == b and V1 == o and V3 == o and V5 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+137: if V3 == x and V2 == b and V5 == o and V9 == b and V4 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+138: if V9 == x and V1 == x and V4 == x and V2 == x and V5 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+139: if V3 == x and V9 == x and V6 == b and V7 == b and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+140: if V5 == x and V3 == b and V1 == o and V6 == o and V4 == o and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.4%
+141: if V3 == x and V6 == x and V5 == o and V9 == x and V8 == x and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+142: if V3 == x and V5 == b and V6 == o and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+143: if V6 == x and V2 == x and V4 == b and V5 == x and V8 == x and V1 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+144: if V8 == b and V5 == b and V6 == o and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+145: if V3 == x and V8 == b and V4 == x and V1 == b and V5 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+146: if V5 == x and V2 == o and V7 == b and V6 == o and V3 == o and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+147: if V3 == x and V2 == x and V5 == b and V7 == x and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+148: if V5 == x and V4 == x and V3 == b and V2 == x and V8 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+149: if V3 == x and V8 == b and V5 == b and V7 == x and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+150: if V5 == x and V2 == o and V3 == b and V7 == b and V8 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+151: if V6 == x and V2 == b and V4 == b and V7 == b and V8 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+152: if V5 == x and V4 == x and V7 == x and V1 == b and V2 == b and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+153: if V6 == x and V7 == x and V9 == x and V8 == x and V2 == b and V3 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+154: if V5 == x and V2 == o and V6 == b and V7 == o and V4 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+155: if V6 == x and V2 == x and V7 == x and V4 == x and V5 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+156: if V9 == b and V6 == b and V4 == b and V1 == b and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+157: if V3 == x and V6 == x and V2 == x and V9 == x and V7 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+158: if V3 == x and V8 == x and V9 == b and V6 == b and V1 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+159: if V5 == x and V2 == o and V6 == b and V3 == b and V4 == x and V7 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+160: if V6 == x and V8 == x and V1 == b and V5 == b and V3 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+161: if V3 == x and V6 == x and V1 == x and V4 == b and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.13% Recall: 0.2%
+162: if V5 == x and V9 == b and V3 == b and V8 == b and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+163: if V3 == x and V1 == o and V2 == o and V4 == o and V8 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+164: if V5 == x and V9 == b and V4 == o and V1 == b and V6 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+165: if V3 == x and V8 == b and V4 == x and V5 == b and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+166: if V2 == b and V1 == b and V9 == b and V8 == b -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+167: if V7 == b and V1 == x and V4 == x and V5 == b and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+168: if V1 == o and V7 == o and V9 == o and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+169: if V4 == b and V5 == o and V7 == b and V9 == b and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+170: if V2 == b and V5 == o and V8 == x and V9 == x and V3 == x and V6 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+171: if V5 == x and V4 == x and V1 == x and V7 == b and V3 == b and V6 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+172: if V8 == b and V6 == b and V2 == o and V4 == o and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+173: if V3 == o and V8 == o and V6 == o and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+174: if V4 == b and V5 == o and V2 == b and V3 == o and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+175: if V2 == x and V4 == b and V6 == x and V3 == b and V5 == x and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+176: if V8 == b and V7 == o and V9 == o and V2 == b and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+177: if V1 == x and V3 == o and V9 == x and V7 == x and V2 == x and V4 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+178: if V1 == x and V4 == b and V5 == o and V2 == b and V6 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+179: if V8 == b and V9 == x and V6 == b and V7 == x and V1 == x and V4 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+180: if V2 == x and V4 == b and V9 == x and V8 == b and V1 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+181: if V7 == b and V6 == o and V1 == o and V3 == x and V4 == o -> class = positive | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.13% Recall: 0.2%
+182: if V1 == x and V7 == b and V8 == b and V4 == x and V2 == o -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+183: if V9 == o and V2 == b and V1 == b and V3 == o and V8 == o -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+184: if V7 == o and V4 == o and V1 == b and V5 == o and V2 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+185: if V2 == x and V4 == b and V8 == o and V3 == o and V6 == b -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+186: if V3 == b and V9 == b and V1 == o and V6 == o and V4 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+187: if V9 == o and V1 == x and V5 == o and V7 == b and V6 == x and V2 == x -> class = positive | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.2%
+188: if V5 == b and V8 == b and V4 == o and V9 == o and V6 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+189: if V8 == x and V7 == x and V9 == b and V6 == b and V3 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+190: if V3 == b and V2 == b and V5 == o and V1 == x and V8 == x and V4 == x -> class = positive | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.2%
+191: if V5 == o and V1 == o and V9 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 5.22% Recall: 14.71%
+192: if V3 == o and V5 == o and V7 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 5.35% Recall: 15.07%
+193: if V5 == b and V3 == o and V7 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.52% Recall: 1.47%
+194: if V2 == o and V5 == o and V8 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 3.92% Recall: 11.03%
+195: if V5 == b and V1 == o and V9 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.52% Recall: 1.47%
+196: if V4 == o and V5 == o and V6 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 3.26% Recall: 9.19%
+197: if V7 == o and V1 == o and V4 == o and V2 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.39% Recall: 1.1%
+198: if V9 == o and V3 == o and V6 == o and V1 == b -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.17% Recall: 3.31%
+199: if V7 == o and V9 == o and V8 == o and V1 == b -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.31% Recall: 3.68%
+200: if V1 == o and V3 == o and V2 == o and V4 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.74%
+201: if V1 == o and V7 == o and V4 == o and V2 == b -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.31% Recall: 3.68%
+202: if V3 == o and V1 == o and V2 == o and V4 == b -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 1.57% Recall: 4.41%
+203: if V9 == o and V1 == x and V5 == x and V3 == o and V6 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.44% Recall: 4.04%
+204: if V7 == o and V1 == o and V4 == o and V5 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.39% Recall: 1.1%
+205: if V5 == b and V1 == o and V9 == b and V2 == x -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.39% Recall: 1.1%
+206: if V7 == o and V9 == o and V8 == o and V2 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.74%
+207: if V5 == b and V3 == o and V7 == b and V1 == x -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.74%
+208: if V7 == o and V9 == o and V8 == o and V5 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.74%
+209: if V1 == o and V3 == o and V8 == o and V4 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+210: if V1 == o and V3 == o and V2 == o and V5 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.74%
+211: if V7 == o and V9 == o and V8 == o and V1 == x and V4 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.74%
+212: if V5 == b and V3 == b and V7 == o and V1 == x -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.39% Recall: 1.1%
+213: if V1 == o and V3 == o and V2 == o and V6 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.74%
+214: if V1 == o and V7 == o and V8 == o and V3 == b -> class = negative | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.13% Recall: 0.37%
+215: if V1 == o and V5 == b and V7 == b and V6 == b -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+216: if V1 == o and V7 == o and V6 == o and V2 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+217: if V1 == o and V7 == o and V8 == o and V6 == b -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.37%
+218: if V1 == o and V3 == o and V8 == o and V5 == b -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+219: if V7 == o and V9 == o and V2 == o and V4 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+220: if V1 == o and V7 == o and V6 == o and V5 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+221: if V1 == o and V3 == o and V8 == o and V5 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+222: if V7 == o and V9 == o and V8 == o and V3 == o and V4 == b -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+223: if V7 == o and V1 == o and V8 == o and V6 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+224: if V9 == o and V1 == x and V7 == o and V2 == b and V4 == b -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.74%
+225: if V1 == o and V3 == o and V2 == o and V6 == b and V7 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+226: if V5 == b and V8 == b and V1 == o and V3 == b -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+227: if V9 == o and V1 == x and V8 == x and V6 == x and V7 == x and V2 == x -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+228: if V1 == o and V3 == o and V8 == b and V5 == b and V4 == x -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.26% Recall: 0.74%
+229: if V9 == o and V7 == o and V8 == o and V6 == o and V1 == x -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.26% Recall: 0.74%
+230: if V1 == o and V7 == o and V4 == o and V8 == b and V3 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+231: if V9 == o and V3 == o and V4 == o and V2 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+232: if V1 == o and V6 == b and V8 == b and V3 == b -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.37%
+233: if V9 == o and V7 == o and V2 == o and V5 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+234: if V1 == o and V8 == o and V6 == o and V3 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+235: if V5 == b and V6 == b and V7 == o and V1 == o and V3 == b -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+236: if V9 == o and V3 == o and V4 == o and V5 == b -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+237: if V9 == o and V7 == o and V6 == b and V2 == b and V3 == b -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+238: if V1 == o and V3 == o and V6 == b and V8 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+239: if V9 == o and V3 == o and V8 == o and V4 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+240: if V1 == o and V7 == o and V8 == o and V4 == b and V5 == x -> class = negative | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.13% Recall: 0.37%
+241: if V1 == o and V8 == b and V6 == b and V5 == b -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.37%
+242: if V9 == o and V5 == b and V2 == b and V4 == b -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.37%
+243: if V1 == o and V9 == b and V5 == b and V7 == b -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+244: if V9 == o and V7 == o and V6 == b and V3 == o and V8 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+245: if V1 == o and V8 == b and V4 == o and V9 == o and V5 == x -> class = negative | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.13% Recall: 0.37%
+246: if V1 == o and V3 == o and V6 == b and V8 == b and V4 == x -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.37%
+247: if V9 == o and V2 == o and V4 == o and V5 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+248: if V1 == o and V6 == o and V8 == o and V5 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+249: if V7 == o and V6 == o and V2 == o and V5 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+250: if V9 == o and V5 == b and V2 == b and V3 == x and V1 == x -> class = negative | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.13% Recall: 0.37%
+251: if V1 == o and V9 == b and V7 == o and V8 == o and V2 == x -> class = negative | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.13% Recall: 0.37%
+252: if V5 == x and V1 == o and V3 == o and V9 == o and V6 == o -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.37%
+253: if V5 == x and V6 == b and V4 == x and V9 == b and V2 == o -> class = negative | Train Precision: 100.0% Test Precision: 33.33% Coverage: 0.13% Recall: 0.37%
+254: if V8 == b and V2 == x and V3 == b and V9 == b -> class = negative | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.37%
+255: if V9 == o and V2 == o and V7 == o and V6 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+256: if V9 == o and V6 == b and V2 == o and V1 == o and V3 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+257: if V8 == b and V5 == b and V4 == b and V3 == o and V1 == x -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+258: if V7 == o and V3 == b and V4 == b and V6 == b and V1 == x and V2 == x -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+259: if V8 == b and V4 == o and V1 == o and V6 == o and V7 == o -> class = negative | Train Precision: 100.0% Test Precision: 0% Coverage: 0.13% Recall: 0.37%
+
+*************************************
+Car Evaluation Data Set
+*************************************
+Accuracy: 84.39%
+Train size: 1382
+Test size: 346
+Rules -------------------------------
+1: if persons == 2 -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 32.78% Recall: 46.8%
+2: if safety == low and persons == 4 -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 11.22% Recall: 16.01%
+3: if persons == more and safety == low -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 11.58% Recall: 16.53%
+4: if safety == med and buying == vhigh and maint == high and persons == more -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.8% Recall: 1.14%
+5: if maint == vhigh and safety == med and persons == 4 and buying == vhigh -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.8% Recall: 1.14%
+6: if maint == vhigh and buying == high and safety == high and persons == more -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.8% Recall: 1.14%
+7: if safety == med and lug_boot == small and persons == more and buying == high -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.01% Recall: 1.45%
+8: if buying == vhigh and safety == high and maint == vhigh and persons == more -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.72% Recall: 1.03%
+9: if safety == med and maint == vhigh and persons == more and buying == vhigh -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.58% Recall: 0.83%
+10: if safety == med and persons == 4 and lug_boot == small and buying == high -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.87% Recall: 1.24%
+11: if safety == med and persons == 4 and buying == vhigh and maint == high -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.72% Recall: 1.03%
+12: if maint == vhigh and persons == 4 and safety == high and buying == vhigh -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.65% Recall: 0.93%
+13: if safety == med and maint == vhigh and persons == more and buying == high and doors == 3 -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.21%
+14: if safety == med and maint == vhigh and persons == more and doors == 2 and lug_boot == med -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.21%
+15: if safety == med and lug_boot == small and persons == more and buying == med and maint == vhigh -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.31%
+16: if safety == med and lug_boot == small and persons == 4 and buying == vhigh and maint == med -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 0.41%
+17: if safety == med and maint == vhigh and persons == 4 and buying == low and lug_boot == small -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.31%
+18: if safety == med and persons == more and lug_boot == small and buying == vhigh and maint == med -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.31%
+19: if safety == med and maint == vhigh and buying == high and lug_boot == big and doors == 2 -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.21%
+20: if safety == med and maint == vhigh and persons == 4 and buying == med and doors == 3 -> class = unacc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 0.21%
+21: if maint == high and buying == vhigh and safety == high and persons == more -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.65% Recall: 0.93%
+22: if safety == med and persons == more and doors == 2 and lug_boot == small and buying == low -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.31%
+23: if safety == med and persons == 4 and lug_boot == med and buying == high and maint == vhigh -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.21%
+24: if safety == med and persons == more and lug_boot == small and buying == med and maint == high -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 0.41%
+25: if persons == 4 and buying == vhigh and maint == high and safety == high -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.8% Recall: 1.14%
+26: if safety == med and persons == 4 and buying == med and maint == high and lug_boot == small -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 0.41%
+27: if buying == high and maint == vhigh and persons == 4 and safety == high -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.65% Recall: 0.93%
+28: if safety == med and maint == vhigh and persons == more and buying == high and doors == 4 and lug_boot == med -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+29: if safety == med and doors == 2 and lug_boot == med and buying == high and persons == more -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.31%
+30: if safety == med and persons == 4 and lug_boot == med and doors == 2 and buying == high -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.1%
+31: if safety == med and maint == vhigh and buying == low and persons == more and doors == 4 -> class = unacc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.07% Recall: 0.1%
+32: if safety == med and persons == 4 and lug_boot == med and doors == 3 and buying == high and maint == med -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+33: if safety == med and maint == vhigh and persons == 4 and buying == med and doors == 2 and lug_boot == small -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+34: if safety == med and persons == 4 and lug_boot == med and doors == 2 and buying == med and maint == vhigh -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+35: if safety == med and persons == 4 and buying == vhigh and maint == low and lug_boot == small -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 0.41%
+36: if doors == 2 and persons == more and safety == high and lug_boot == small and buying == low -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.31%
+37: if safety == med and maint == vhigh and doors == 5more and buying == high and persons == more and lug_boot == med -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+38: if safety == med and maint == vhigh and buying == low and doors == 3 and persons == 4 and lug_boot == med -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+39: if safety == med and persons == more and maint == vhigh and buying == high and lug_boot == big and doors == 4 -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+40: if safety == med and persons == more and lug_boot == small and buying == vhigh and maint == low -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.21%
+41: if doors == 2 and persons == more and safety == high and lug_boot == small and buying == med -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.1%
+42: if doors == 2 and persons == more and maint == med and buying == vhigh and safety == med -> class = unacc | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.07% Recall: 0.1%
+43: if safety == med and maint == vhigh and doors == 5more and buying == high and lug_boot == big and persons == 4 -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+44: if doors == 2 and persons == more and lug_boot == small and safety == high and maint == med -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.21%
+45: if safety == med and lug_boot == med and persons == 4 and doors == 2 and buying == vhigh and maint == med -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+46: if safety == med and maint == vhigh and buying == low and persons == more and lug_boot == small and doors == 3 -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+47: if safety == med and lug_boot == med and persons == 4 and doors == 3 and buying == high and maint == high -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+48: if doors == 2 and persons == more and lug_boot == small and safety == high and maint == low and buying == vhigh -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+49: if safety == med and buying == med and doors == 2 and maint == high and lug_boot == med and persons == 4 -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+50: if safety == med and maint == vhigh and doors == 5more and lug_boot == small and buying == med -> class = unacc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.1%
+51: if safety == med and persons == more and buying == med and doors == 2 and maint == med and lug_boot == small -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+52: if safety == med and lug_boot == med and persons == 4 and doors == 3 and maint == low and buying == high -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+53: if doors == 2 and persons == more and maint == high and buying == med and lug_boot == med and safety == med -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+54: if buying == high and persons == more and doors == 2 and safety == high and lug_boot == small and maint == high -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+55: if maint == vhigh and safety == med and buying == low and doors == 5more and persons == more and lug_boot == small -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+56: if safety == med and maint == vhigh and buying == high and lug_boot == big and doors == 5more and persons == more -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+57: if doors == 2 and maint == low and buying == high and safety == high and lug_boot == small and persons == more -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+58: if lug_boot == med and safety == med and persons == 4 and doors == 2 and maint == vhigh and buying == low -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+59: if maint == med and buying == vhigh and doors == 3 and safety == med and lug_boot == med and persons == 4 -> class = unacc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.1%
+60: if persons == 4 and safety == high and buying == high and maint == med -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.8% Recall: 3.57%
+61: if persons == 4 and safety == high and buying == med and maint == high -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.65% Recall: 2.92%
+62: if persons == 4 and safety == med and maint == med and buying == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.87% Recall: 3.9%
+63: if safety == high and persons == more and buying == high and maint == high and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.22% Recall: 0.97%
+64: if safety == high and persons == more and buying == med and maint == high -> class = acc | Train Precision: 100.0% Test Precision: 66.67% Coverage: 0.65% Recall: 2.92%
+65: if persons == 4 and safety == high and maint == vhigh and buying == med -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.72% Recall: 3.25%
+66: if safety == med and persons == more and lug_boot == big and doors == 4 and buying == med -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.22% Recall: 0.97%
+67: if safety == med and persons == more and maint == med and buying == med and doors == 5more -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+68: if safety == med and persons == 4 and buying == low and maint == high -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.8% Recall: 3.57%
+69: if safety == high and persons == more and buying == high and maint == low and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.22% Recall: 0.97%
+70: if safety == high and persons == 4 and maint == low and buying == high -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.72% Recall: 3.25%
+71: if persons == more and safety == med and buying == low and maint == high and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+72: if persons == more and safety == med and maint == low and buying == vhigh and doors == 2 -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.07% Recall: 0.32%
+73: if persons == more and safety == med and lug_boot == med and buying == med and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.14% Recall: 0.65%
+74: if persons == more and safety == high and maint == med and buying == high and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.22% Recall: 0.97%
+75: if safety == med and persons == more and maint == low and doors == 5more and buying == low -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.07% Recall: 0.32%
+76: if safety == med and persons == more and maint == med and doors == 4 and buying == high -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 0.65%
+77: if safety == med and persons == more and maint == low and lug_boot == med and buying == vhigh -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.22% Recall: 0.97%
+78: if safety == med and persons == 4 and maint == low and buying == vhigh and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 0.65%
+79: if safety == high and persons == more and doors == 5more and buying == high and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.32%
+80: if safety == high and persons == more and doors == 3 and buying == high and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+81: if safety == med and persons == 4 and lug_boot == big and buying == high and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.97%
+82: if safety == high and persons == more and maint == vhigh and buying == med and doors == 5more -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+83: if safety == med and persons == more and buying == low and maint == high and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+84: if safety == high and persons == more and maint == med and buying == vhigh and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+85: if persons == 4 and safety == high and buying == vhigh and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.8% Recall: 3.57%
+86: if safety == med and persons == more and lug_boot == big and buying == high and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.97%
+87: if safety == med and persons == 4 and lug_boot == big and buying == high and maint == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 1.3%
+88: if safety == med and persons == more and maint == med and buying == vhigh and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.32%
+89: if safety == med and persons == more and buying == low and maint == vhigh and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.97%
+90: if safety == med and persons == 4 and maint == low and buying == low and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 0.65%
+91: if safety == high and persons == more and maint == vhigh and buying == low and doors == 5more -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+92: if safety == med and persons == 4 and lug_boot == big and buying == vhigh and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 1.3%
+93: if safety == high and persons == more and lug_boot == med and doors == 2 and buying == vhigh -> class = acc | Train Precision: 100.0% Test Precision: 33.33% Coverage: 0.07% Recall: 0.32%
+94: if safety == high and persons == more and maint == med and buying == high and doors == 5more -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+95: if safety == high and persons == more and doors == 3 and maint == vhigh and buying == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.22% Recall: 0.97%
+96: if safety == med and persons == more and maint == med and doors == 3 and buying == med -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.32%
+97: if safety == med and persons == more and lug_boot == med and doors == 5more and buying == high and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+98: if safety == med and persons == more and lug_boot == med and maint == med and buying == vhigh and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+99: if persons == 4 and safety == med and buying == med and maint == high and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 1.3%
+100: if safety == high and persons == more and buying == vhigh and maint == low and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.22% Recall: 0.97%
+101: if safety == high and persons == 4 and buying == low and maint == vhigh -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.72% Recall: 3.25%
+102: if safety == med and persons == more and buying == med and doors == 2 and lug_boot == big and maint == high -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+103: if safety == med and persons == more and lug_boot == med and buying == med and doors == 3 and maint == high -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+104: if safety == med and persons == more and maint == med and doors == 2 and buying == med and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+105: if safety == med and persons == 4 and buying == low and maint == vhigh and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.97%
+106: if persons == more and safety == high and doors == 2 and lug_boot == med and maint == med -> class = acc | Train Precision: 100.0% Test Precision: 66.67% Coverage: 0.07% Recall: 0.32%
+107: if persons == more and safety == med and buying == low and lug_boot == med and maint == high -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.32%
+108: if persons == more and safety == high and doors == 2 and buying == high and lug_boot == big and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+109: if safety == med and persons == more and doors == 5more and buying == med and maint == vhigh -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 0.65%
+110: if safety == med and persons == 4 and lug_boot == med and buying == high and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.22% Recall: 0.97%
+111: if persons == more and safety == high and maint == med and buying == vhigh and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+112: if safety == med and persons == more and maint == med and buying == low and lug_boot == small -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.22% Recall: 0.97%
+113: if safety == high and maint == high and buying == high and persons == 4 -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.72% Recall: 3.25%
+114: if safety == med and persons == 4 and maint == med and buying == vhigh and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 1.3%
+115: if persons == more and safety == high and maint == vhigh and buying == low and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+116: if persons == more and safety == high and maint == high and buying == high and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+117: if safety == med and persons == more and lug_boot == med and buying == high and maint == high and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+118: if safety == med and persons == more and maint == low and buying == med and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.07% Recall: 0.32%
+119: if safety == med and persons == more and lug_boot == med and buying == low and maint == vhigh and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+120: if safety == med and persons == 4 and lug_boot == med and doors == 5more and buying == high and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+121: if persons == more and safety == high and doors == 2 and lug_boot == med and buying == high and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+122: if safety == med and persons == more and maint == low and buying == low and doors == 4 and lug_boot == small -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+123: if safety == med and persons == 4 and buying == low and lug_boot == small and maint == med -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.97%
+124: if persons == more and safety == high and doors == 5more and buying == vhigh and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.22% Recall: 0.97%
+125: if safety == med and persons == more and doors == 5more and maint == high and buying == low -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.32%
+126: if safety == med and persons == more and lug_boot == med and maint == med and buying == vhigh and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+127: if safety == med and persons == more and maint == low and buying == med and doors == 2 and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+128: if safety == med and persons == 4 and buying == med and maint == vhigh and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 0.65%
+129: if persons == more and safety == high and doors == 2 and buying == low and maint == vhigh and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+130: if maint == med and safety == high and buying == vhigh and persons == 4 -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.72% Recall: 3.25%
+131: if persons == more and safety == high and doors == 4 and maint == vhigh and buying == low -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+132: if safety == med and persons == more and buying == high and maint == high and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.97%
+133: if safety == med and lug_boot == med and doors == 5more and maint == med and buying == vhigh and persons == more -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+134: if safety == med and persons == 4 and lug_boot == med and doors == 5more and maint == vhigh and buying == low -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+135: if safety == med and persons == 4 and lug_boot == med and maint == med and buying == low and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+136: if persons == more and safety == high and buying == med and maint == vhigh and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.22% Recall: 0.97%
+137: if safety == med and persons == 4 and buying == med and maint == low and lug_boot == small -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.97%
+138: if persons == more and safety == med and maint == low and buying == vhigh and lug_boot == big and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+139: if persons == more and safety == high and maint == high and buying == high and doors == 5more -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+140: if safety == med and lug_boot == med and doors == 5more and buying == high and maint == high and persons == more -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+141: if safety == med and lug_boot == med and persons == 4 and doors == 5more and buying == med and maint == high -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+142: if safety == med and lug_boot == med and maint == med and doors == 5more and buying == high and persons == more -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+143: if safety == med and persons == 4 and lug_boot == med and maint == med and buying == vhigh and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+144: if persons == more and maint == med and safety == high and lug_boot == small and buying == med -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.22% Recall: 0.97%
+145: if safety == med and persons == more and doors == 2 and maint == med and lug_boot == big and buying == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+146: if safety == med and buying == low and maint == low and persons == 4 and lug_boot == small and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+147: if safety == med and lug_boot == med and buying == low and doors == 2 and maint == low and persons == more -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+148: if safety == med and persons == 4 and lug_boot == med and doors == 5more and buying == high and maint == high -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+149: if safety == med and persons == more and buying == med and maint == vhigh and doors == 3 and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+150: if buying == low and maint == high and safety == high and lug_boot == small and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 0.65%
+151: if safety == med and persons == 4 and lug_boot == med and maint == med and doors == 5more and buying == vhigh -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+152: if doors == 2 and buying == low and maint == high and safety == high and persons == 4 and lug_boot == small -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+153: if safety == med and buying == low and doors == 2 and maint == med and lug_boot == med and persons == more -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+154: if safety == med and persons == 4 and doors == 2 and buying == low and maint == low and lug_boot == small -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+155: if persons == more and doors == 2 and safety == high and maint == high and buying == high and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+156: if safety == med and persons == more and maint == low and doors == 5more and buying == vhigh and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+157: if safety == med and persons == 4 and lug_boot == med and buying == low and doors == 2 and maint == low -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+158: if persons == more and doors == 2 and lug_boot == big and safety == high and buying == high and maint == high -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+159: if safety == med and persons == more and buying == med and lug_boot == small and maint == low and doors == 5more -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+160: if persons == 4 and buying == med and maint == med and safety == high and lug_boot == small -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 0.97%
+161: if safety == med and persons == 4 and maint == vhigh and buying == med and doors == 5more and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+162: if persons == more and safety == high and doors == 2 and lug_boot == big and maint == med and buying == high -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+163: if buying == low and maint == high and safety == high and doors == 5more and persons == more -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.07% Recall: 0.32%
+164: if safety == med and persons == 4 and buying == high and maint == high and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+165: if buying == low and maint == high and safety == high and persons == 4 and lug_boot == small and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+166: if persons == more and safety == med and maint == med and buying == high and doors == 3 and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+167: if buying == low and maint == high and safety == high and lug_boot == med and doors == 2 and persons == more -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+168: if safety == med and buying == low and persons == more and maint == high and doors == 2 and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+169: if safety == med and persons == 4 and maint == vhigh and buying == med and lug_boot == big and doors == 2 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+170: if persons == more and lug_boot == big and doors == 2 and maint == vhigh and buying == med -> class = acc | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 0.65%
+171: if buying == low and persons == 4 and maint == high and safety == high and lug_boot == med and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+172: if safety == med and buying == low and lug_boot == med and maint == vhigh and doors == 4 -> class = acc | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.07% Recall: 0.32%
+173: if maint == med and persons == more and lug_boot == big and buying == high and doors == 3 and safety == high -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+174: if safety == med and persons == more and maint == low and doors == 4 and buying == high and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+175: if maint == med and doors == 2 and lug_boot == med and persons == 4 and buying == low and safety == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+176: if doors == 5more and buying == low and lug_boot == small and persons == 4 and safety == high -> class = acc | Train Precision: 100.0% Test Precision: 33.33% Coverage: 0.07% Recall: 0.32%
+177: if persons == more and maint == med and lug_boot == big and buying == vhigh and doors == 5more and safety == high -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+178: if safety == med and doors == 5more and buying == low and maint == low and persons == 4 and lug_boot == small -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+179: if persons == more and safety == med and maint == med and buying == med and doors == 4 and lug_boot == small -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+180: if lug_boot == med and persons == 4 and buying == med and maint == med and safety == high and doors == 3 -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+181: if persons == more and buying == low and maint == vhigh and doors == 5more and lug_boot == med and safety == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+182: if doors == 2 and safety == high and buying == low and maint == vhigh and persons == more and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+183: if lug_boot == med and persons == 4 and buying == med and doors == 4 and maint == high and safety == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+184: if persons == more and maint == low and doors == 4 and buying == vhigh and safety == high -> class = acc | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.14% Recall: 0.65%
+185: if maint == med and buying == high and safety == med and doors == 2 and persons == more and lug_boot == big -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+186: if persons == 4 and lug_boot == med and doors == 2 and safety == high and maint == high and buying == low -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+187: if safety == med and doors == 5more and persons == 4 and buying == high and maint == med and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+188: if buying == med and persons == 4 and maint == vhigh and doors == 5more and lug_boot == big and safety == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+189: if maint == low and buying == low and doors == 3 and safety == med and persons == more and lug_boot == small -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+190: if maint == med and doors == 2 and buying == med and safety == high and persons == 4 and lug_boot == med -> class = acc | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 0.32%
+191: if safety == high and buying == low and persons == more and lug_boot == big and maint == med -> class = vgood | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 5.66%
+192: if safety == high and buying == low and lug_boot == big and persons == 4 and maint == med -> class = vgood | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 5.66%
+193: if safety == high and buying == low and persons == more and lug_boot == med and maint == med -> class = vgood | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.22% Recall: 5.66%
+194: if safety == high and buying == low and maint == high and lug_boot == big and persons == 4 -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 7.55%
+195: if safety == high and buying == med and maint == med and lug_boot == big and persons == 4 -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 7.55%
+196: if safety == high and maint == low and buying == med and lug_boot == big and persons == more -> class = vgood | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 5.66%
+197: if safety == high and buying == low and maint == low and lug_boot == big and persons == more -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 7.55%
+198: if safety == high and buying == low and lug_boot == med and doors == 4 and persons == 4 and maint == med -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+199: if safety == high and buying == med and maint == low and persons == 4 and lug_boot == big -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 7.55%
+200: if safety == high and buying == low and maint == high and persons == more and doors == 4 -> class = vgood | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 3.77%
+201: if safety == high and buying == low and maint == low and persons == 4 and doors == 5more -> class = vgood | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 3.77%
+202: if safety == high and lug_boot == med and maint == low and doors == 4 and buying == med -> class = vgood | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 3.77%
+203: if safety == high and buying == low and lug_boot == med and maint == high and doors == 5more -> class = vgood | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.07% Recall: 1.89%
+204: if safety == high and persons == more and buying == med and maint == med and lug_boot == big -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 7.55%
+205: if safety == high and buying == low and lug_boot == med and maint == low and doors == 4 and persons == more -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+206: if safety == high and buying == low and maint == high and persons == more and doors == 3 and lug_boot == med -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+207: if safety == high and buying == low and maint == high and persons == more and lug_boot == big and doors == 3 -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+208: if safety == high and lug_boot == med and buying == med and maint == med and doors == 5more and persons == more -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+209: if safety == high and buying == low and maint == low and doors == 3 and lug_boot == med and persons == more -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+210: if safety == high and buying == low and persons == 4 and maint == low and doors == 4 and lug_boot == med -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+211: if safety == high and lug_boot == med and buying == med and maint == med and doors == 3 and persons == more -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+212: if safety == high and buying == low and persons == 4 and lug_boot == med and maint == high and doors == 4 -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+213: if safety == high and doors == 5more and lug_boot == med and buying == med and maint == low and persons == more -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+214: if safety == high and buying == low and persons == 4 and maint == med and doors == 5more and lug_boot == med -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+215: if safety == high and buying == low and lug_boot == big and doors == 2 and maint == high and persons == more -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+216: if safety == high and persons == 4 and buying == med and maint == med and doors == 5more and lug_boot == med -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+217: if maint == low and buying == low and doors == 3 and persons == 4 and lug_boot == big and safety == high -> class = vgood | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+218: if buying == low and maint == low and persons == 4 and safety == high and doors == 2 -> class = good | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 3.77%
+219: if buying == low and maint == med and safety == med and lug_boot == big and persons == more -> class = good | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.22% Recall: 5.66%
+220: if maint == low and buying == med and persons == 4 and safety == med and doors == 4 -> class = good | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.07% Recall: 1.89%
+221: if maint == low and buying == med and persons == 4 and doors == 2 and safety == high and lug_boot == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+222: if maint == low and buying == low and safety == med and lug_boot == big and doors == 3 -> class = good | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.07% Recall: 1.89%
+223: if maint == low and buying == med and safety == med and lug_boot == big and doors == 2 -> class = good | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 3.77%
+224: if buying == low and maint == low and safety == med and lug_boot == big and doors == 5more -> class = good | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.07% Recall: 1.89%
+225: if buying == low and maint == med and persons == 4 and safety == med and doors == 4 -> class = good | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 3.77%
+226: if maint == low and buying == low and safety == med and doors == 4 and lug_boot == med -> class = good | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 3.77%
+227: if maint == low and buying == med and persons == 4 and lug_boot == small and safety == high -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.29% Recall: 7.55%
+228: if buying == low and maint == med and persons == 4 and safety == high and doors == 2 -> class = good | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 3.77%
+229: if buying == low and maint == low and safety == high and lug_boot == small and doors == 5more -> class = good | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.07% Recall: 1.89%
+230: if buying == low and maint == low and persons == 4 and safety == high and doors == 3 and lug_boot == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+231: if buying == low and maint == med and safety == med and doors == 5more and lug_boot == med -> class = good | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 3.77%
+232: if maint == low and buying == low and safety == med and lug_boot == big and doors == 2 and persons == more -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+233: if maint == low and buying == med and persons == more and doors == 3 and safety == med -> class = good | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.14% Recall: 3.77%
+234: if buying == low and maint == low and persons == 4 and safety == med and lug_boot == big and doors == 4 -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+235: if buying == low and maint == med and safety == med and persons == 4 and lug_boot == big and doors == 3 -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+236: if buying == low and maint == low and safety == high and lug_boot == small and doors == 3 and persons == more -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+237: if buying == low and maint == med and persons == more and doors == 4 and lug_boot == small and safety == high -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+238: if maint == low and buying == med and persons == more and safety == high and doors == 2 -> class = good | Train Precision: 100.0% Test Precision: 0.0% Coverage: 0.07% Recall: 1.89%
+239: if buying == low and maint == low and persons == 4 and safety == high and lug_boot == small and doors == 3 -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+240: if buying == low and maint == med and safety == med and persons == more and doors == 4 and lug_boot == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+241: if maint == low and buying == med and safety == med and doors == 5more and persons == 4 and lug_boot == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+242: if buying == low and maint == low and lug_boot == med and persons == more and doors == 3 and safety == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+243: if buying == low and maint == med and persons == 4 and doors == 3 and safety == high and lug_boot == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+244: if maint == low and buying == med and persons == more and lug_boot == small and safety == high -> class = good | Train Precision: 100.0% Test Precision: 50.0% Coverage: 0.14% Recall: 3.77%
+245: if buying == low and maint == low and persons == 4 and safety == med and doors == 5more and lug_boot == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+246: if buying == low and maint == med and safety == med and persons == 4 and lug_boot == big and doors == 5more -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+247: if buying == low and maint == low and safety == high and doors == 4 and lug_boot == small and persons == more -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+248: if buying == low and maint == med and doors == 3 and persons == more and lug_boot == med and safety == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+249: if maint == low and buying == med and safety == med and lug_boot == big and doors == 5more and persons == 4 -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+250: if buying == low and maint == low and doors == 2 and persons == 4 and lug_boot == big and safety == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+251: if buying == low and safety == high and lug_boot == small and maint == med and doors == 3 and persons == 4 -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+252: if maint == low and buying == med and safety == med and lug_boot == big and doors == 5more and persons == more -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+253: if buying == low and safety == high and maint == low and doors == 2 and persons == more and lug_boot == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+254: if buying == low and maint == med and doors == 2 and lug_boot == big and persons == 4 and safety == med -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+255: if maint == low and persons == 4 and buying == med and doors == 3 and safety == med and lug_boot == big -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+256: if buying == low and lug_boot == small and safety == high and doors == 5more and maint == med and persons == more -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+257: if doors == 4 and buying == low and maint == low and persons == 4 and safety == high and lug_boot == small -> class = good | Train Precision: 100.0% Test Precision: 0% Coverage: 0.07% Recall: 1.89%
+
+*************************************
+Mushroom Data Set
+*************************************
+Accuracy: 99.82%
+Train size: 4515
+Test size: 1129
+Rules -------------------------------
+1: if cap-shape == c -> class = p | Train Precision: 100.0% Test Precision: 0% Coverage: 0.09% Recall: 0.23%
+2: if cap-color == b -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 2.06% Recall: 5.46%
+3: if odor == c -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 3.3% Recall: 8.74%
+4: if odor == p -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 4.23% Recall: 11.21%
+5: if odor == m -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.55% Recall: 1.47%
+6: if stalk-surface-below-ring == k -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 23.1% Recall: 61.21%
+7: if cap-surface == g and cap-shape == f -> class = p | Train Precision: 100.0% Test Precision: 0% Coverage: 0.02% Recall: 0.06%
+8: if stalk-color-above-ring == y and cap-shape == f -> class = p | Train Precision: 100.0% Test Precision: 0% Coverage: 0.04% Recall: 0.12%
+9: if gill-color == r and cap-color == w -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.11% Recall: 0.29%
+10: if spore-print-color == r and cap-color == p -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.44% Recall: 1.17%
+11: if cap-surface == g and cap-shape == k -> class = p | Train Precision: 100.0% Test Precision: 0% Coverage: 0.02% Recall: 0.06%
+12: if stalk-color-above-ring == y and cap-shape == k -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.02% Recall: 0.06%
+13: if stalk-color-above-ring == y and cap-shape == b -> class = p | Train Precision: 100.0% Test Precision: 0% Coverage: 0.04% Recall: 0.12%
+14: if habitat == u and stalk-surface-above-ring == f and cap-color == g -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.38% Recall: 1.0%
+15: if cap-surface == g and cap-shape == b -> class = p | Train Precision: 100.0% Test Precision: 0% Coverage: 0.02% Recall: 0.06%
+16: if spore-print-color == r and cap-color == w and gill-color == w -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.16% Recall: 0.41%
+17: if habitat == u and stalk-surface-below-ring == f and cap-color == w -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.47% Recall: 1.23%
+18: if habitat == u and gill-color == h and cap-color == w and stalk-surface-below-ring == s -> class = p | Train Precision: 100.0% Test Precision: 0% Coverage: 0.18% Recall: 0.47%
+19: if habitat == u and odor == f and cap-color == g and stalk-surface-above-ring == s -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.44% Recall: 1.17%
+20: if spore-print-color == r and cap-color == w and gill-color == g -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.35%
+21: if stalk-surface-above-ring == f and bruises == t and habitat == g and cap-color == g -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.38% Recall: 1.0%
+22: if population == c and cap-color == w and cap-surface == y and cap-shape == f -> class = p | Train Precision: 100.0% Test Precision: 0% Coverage: 0.02% Recall: 0.06%
+23: if cap-color == w and odor == f and habitat == g -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.82% Recall: 2.17%
+24: if population == c and cap-shape == b and cap-color == w and cap-surface == y -> class = p | Train Precision: 100.0% Test Precision: 0% Coverage: 0.02% Recall: 0.06%
+25: if habitat == u and cap-color == w and stalk-surface-above-ring == f and stalk-surface-below-ring == s and gill-color == w -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.18%
+26: if cap-shape == k and cap-color == w and cap-surface == y -> class = p | Train Precision: 100.0% Test Precision: 0% Coverage: 0.02% Recall: 0.06%
+27: if habitat == u and cap-color == w and gill-color == p and stalk-surface-above-ring == f and stalk-surface-below-ring == s -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.18%
+28: if cap-surface == s and odor == f and cap-color == g and habitat == g and stalk-surface-above-ring == s -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.4% Recall: 1.06%
+29: if habitat == u and cap-color == w and odor == f and stalk-surface-below-ring == s and stalk-surface-above-ring == s and gill-color == w -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.18%
+30: if habitat == u and gill-color == p and cap-color == w and odor == f and stalk-surface-below-ring == s and stalk-surface-above-ring == s -> class = p | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.18%
+31: if cap-shape == s -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.58% Recall: 0.92%
+32: if odor == l -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 7.38% Recall: 11.85%
+33: if odor == a -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 7.24% Recall: 11.63%
+34: if stalk-color-above-ring == g -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 10.03% Recall: 16.12%
+35: if population == a -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 6.51% Recall: 10.46%
+36: if cap-color == c and cap-surface == f -> class = e | Train Precision: 100.0% Test Precision: 0% Coverage: 0.27% Recall: 0.43%
+37: if stalk-color-below-ring == g and stalk-color-above-ring == p -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 3.34% Recall: 5.37%
+38: if stalk-surface-above-ring == y and cap-shape == x -> class = e | Train Precision: 100.0% Test Precision: 0% Coverage: 0.09% Recall: 0.14%
+39: if cap-color == e and stalk-color-above-ring == w -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 3.48% Recall: 5.59%
+40: if ring-type == e and population == s -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 6.95% Recall: 11.17%
+41: if spore-print-color == w and cap-color == g -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.16% Recall: 0.25%
+42: if habitat == l and cap-color == n -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.4% Recall: 0.64%
+43: if cap-color == c and cap-surface == s -> class = e | Train Precision: 100.0% Test Precision: 0% Coverage: 0.09% Recall: 0.14%
+44: if gill-color == u and stalk-color-above-ring == p and stalk-color-below-ring == p -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.86% Recall: 1.39%
+45: if stalk-surface-above-ring == y and cap-shape == k and cap-surface == s -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.02% Recall: 0.04%
+46: if stalk-color-above-ring == p and stalk-color-below-ring == w -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 3.54% Recall: 5.69%
+47: if stalk-surface-above-ring == y and habitat == d and cap-shape == f -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.02% Recall: 0.04%
+48: if cap-color == c and cap-surface == y and bruises == t -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.07% Recall: 0.11%
+49: if stalk-surface-above-ring == y and cap-shape == b and cap-surface == s -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.02% Recall: 0.04%
+50: if stalk-color-below-ring == p and stalk-color-above-ring == w and cap-color == n -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.09% Recall: 1.74%
+51: if stalk-color-below-ring == g and stalk-color-above-ring == w and cap-color == n -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.22% Recall: 1.96%
+52: if stalk-surface-above-ring == y and cap-shape == k and habitat == d -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.02% Recall: 0.04%
+53: if stalk-color-below-ring == p and gill-color == n and stalk-color-above-ring == p -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.84% Recall: 1.35%
+54: if spore-print-color == w and cap-color == p -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.16% Recall: 0.25%
+55: if cap-color == c and stalk-surface-below-ring == f and cap-surface == y -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.09% Recall: 0.14%
+56: if habitat == u and population == y and cap-shape == f -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.31% Recall: 0.5%
+57: if stalk-surface-above-ring == y and habitat == p and cap-shape == f -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.02% Recall: 0.04%
+58: if stalk-color-below-ring == p and gill-color == w and stalk-color-above-ring == p -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.89% Recall: 1.42%
+59: if cap-color == g and stalk-color-below-ring == g and stalk-color-above-ring == w -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.24% Recall: 1.99%
+60: if habitat == u and gill-color == g and cap-shape == x -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.21%
+61: if stalk-color-below-ring == p and stalk-color-above-ring == w and cap-color == g -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.17% Recall: 1.89%
+62: if stalk-surface-above-ring == y and cap-shape == k and habitat == p and cap-surface == y -> class = e | Train Precision: 100.0% Test Precision: 0% Coverage: 0.02% Recall: 0.04%
+63: if habitat == u and cap-surface == f and cap-shape == x and gill-color == n -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.16% Recall: 0.25%
+64: if spore-print-color == w and habitat == p and cap-color == n and bruises == t -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.16% Recall: 0.25%
+65: if cap-color == c and stalk-surface-below-ring == s and cap-surface == y and cap-shape == k -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.02% Recall: 0.04%
+66: if habitat == u and cap-surface == f and gill-color == p and cap-shape == x -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.11% Recall: 0.18%
+67: if cap-color == n and cap-shape == b and cap-surface == y -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.02% Recall: 0.04%
+68: if cap-color == n and habitat == d and stalk-color-below-ring == w and stalk-color-above-ring == w -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 1.09% Recall: 1.74%
+69: if habitat == u and cap-surface == f and cap-shape == f and population == v -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.29% Recall: 0.46%
+70: if cap-color == c and cap-shape == f and stalk-surface-below-ring == s and cap-surface == y and bruises == f -> class = e | Train Precision: 100.0% Test Precision: 0% Coverage: 0.04% Recall: 0.07%
+71: if cap-color == g and bruises == t and stalk-color-below-ring == w and stalk-color-above-ring == w and cap-surface == f -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.53% Recall: 0.85%
+72: if stalk-color-above-ring == p and gill-color == p and stalk-color-below-ring == p and cap-color == n -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.29% Recall: 0.46%
+73: if cap-color == g and bruises == t and cap-surface == y and stalk-color-below-ring == w and stalk-color-above-ring == w and gill-color == n -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.16% Recall: 0.25%
+74: if stalk-color-above-ring == p and gill-color == p and stalk-color-below-ring == p and cap-color == e -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.29% Recall: 0.46%
+75: if cap-color == g and bruises == t and gill-color == p and stalk-color-above-ring == p and stalk-color-below-ring == p -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.29% Recall: 0.46%
+76: if habitat == u and gill-color == k and cap-shape == x and cap-surface == f -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.21%
+77: if gill-color == u and cap-color == g and stalk-color-above-ring == w and cap-surface == y and stalk-color-below-ring == w -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.21%
+78: if cap-color == g and gill-color == w and cap-surface == y and stalk-color-below-ring == w and stalk-color-above-ring == w and stalk-shape == t -> class = e | Train Precision: 100.0% Test Precision: 0% Coverage: 0.18% Recall: 0.28%
+79: if gill-color == p and cap-color == g and stalk-color-above-ring == w and cap-surface == y and stalk-color-below-ring == w -> class = e | Train Precision: 100.0% Test Precision: 100.0% Coverage: 0.13% Recall: 0.21%
