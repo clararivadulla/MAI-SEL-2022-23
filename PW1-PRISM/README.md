@@ -1,4 +1,3 @@
-
 # PRISM
 ## Implementation of a rule based-algorithm
 
@@ -22,7 +21,7 @@ The datasets inside the `data` folder are:
 
 ### How to execute the code
 
-1. Open the folder of the project in the terminal `cd <root_folder_of_project>/`
+1. Open the folder containing the code of the project (*source*) in the terminal `cd <root_folder_of_project>/`
 2. Create a virtual environment using Python `python3 -m venv venv/`
 3. Open the virtual environment `source venv/bin/activate`
 4. Install the required dependencies `pip install -r requirements.txt`
