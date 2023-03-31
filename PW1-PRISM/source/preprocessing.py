@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 
 
 def preprocess(path, dataset_name):
-    if dataset_name is 'car_evaluation':
+    if dataset_name == 'car_evaluation':
         df = pd.read_csv(f"{path}/data/{dataset_name}.csv",
                          names=['buying', 'maint', 'doors', 'persons', 'lug_boot', 'safety', 'class'])
     else:

@@ -1,4 +1,0 @@
-,Rule,Class,Precision,Recall,Coverage
-17,if synfuels-corporation-cutback == y and export-administration-act-south-africa == n and adoption-of-the-budget-resolution == y then,democrat,0.0,1.06,0.54
-18,if synfuels-corporation-cutback == y and physician-fee-freeze == y and mx-missile == y and handicapped-infants == n then,democrat,0.0,1.06,0.54
-19,if handicapped-infants == y and crime == y and el-salvador-aid == n and synfuels-corporation-cutback == n and religious-groups-in-schools == y then,democrat,0.0,1.06,0.54
