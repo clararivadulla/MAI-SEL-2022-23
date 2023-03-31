@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 np.random.seed(2012)
-path = "/Users/clararivadulla/Repositories/MAI-SEL-2022-23/PW1-PRISM"
+path = "/Users/clararivadulla/Repositories/MAI-SEL-2022-23/PW1-SEL-2023-ClaraRivadulla"
 
 
 def print_rules(prism, train, test, dataset):
@@ -13,32 +13,38 @@ def print_rules(prism, train, test, dataset):
     num = 1
     for C_i in prism:
         for rule_num in prism[C_i]:
-            str = f'{num}: if '
+            str_print = f'{num}: if '
             rule_str = 'if '
             rule = prism[C_i][rule_num]
             for i in range(len(rule)):
                 if i == (len(rule) - 1):
                     rule_str += f'{rule[i][0]} == {rule[i][1]} '
-                    str += f'{rule[i][0]} == {rule[i][1]} '
+                    str_print += f'{rule[i][0]} == {rule[i][1]} '
                 else:
                     rule_str += f'{rule[i][0]} == {rule[i][1]} and '
-                    str += f'{rule[i][0]} == {rule[i][1]} and '
+                    str_print += f'{rule[i][0]} == {rule[i][1]} and '
             train_precision = rule_precision(C_i, rule, train)
             test_precision = rule_precision(C_i, rule, test)
             recall = rule_recall(C_i, rule, train)
             coverage = rule_coverage(C_i, rule, train)
             df = df.append({'Rule': f'{rule_str}then', 'Class': C_i, 'Precision': round(test_precision * 100, 2),
                             'Recall': round(recall * 100, 2), 'Coverage': round(coverage * 100, 2)}, ignore_index=True)
-            str += f'-> class = {C_i} | Train Precision: {round(train_precision * 100, 2)}% Test Precision: {round(test_precision * 100, 2)}% Coverage: {round(coverage * 100, 2)}% Recall: {round(recall * 100, 2)}%'
-            print(str)
+            str_print += f'-> class = {C_i} | Train Precision: {round(train_precision * 100, 2)}% Test Precision: {round(test_precision * 100, 2)}% Coverage: {round(coverage * 100, 2)}% Recall: {round(recall * 100, 2)}%'
+            print(str_print)
             num += 1
     df.sort_values(by=['Precision', 'Recall'], inplace=True, ascending=[False, False])
     df.reset_index(inplace=True, drop=True)
+    df['num'] = df.index + 1
+    df['Rule'] = '(' + df['num'].astype(str) + ') ' + df['Rule']
+    df = df.drop('num', axis=1)
     df.to_csv(f'results/{dataset}.csv')
     df[:3].to_csv(f'results/best-3-rules-{dataset}.csv')
 
 
 def accuracy(predicted, y):
+    """
+        Calculates the accuracy of the model (#instances correctly classified / #total of instances)
+    """
     y = list(y)
     correct = 0
     for i in range(len(predicted)):
@@ -50,10 +56,6 @@ def accuracy(predicted, y):
 def rule_coverage(C_i, rule, x):
     """
     Calculates the ratio between the #instances satisfying the antecedent of R, and the #Total instances in the training dataset.
-    :param C_i:
-    :param rule:
-    :param x:
-    :return:
     """
     satisfies_antecedent = x.copy()
     for attr, val in rule:
@@ -64,10 +66,6 @@ def rule_coverage(C_i, rule, x):
 def rule_recall(C_i, rule, x):
     """
     Calculates the ratio between the #instances satisfying the antecedent of R and the consequent of R, and the #Total instances in the training dataset belonging to the same class label than R is classifying.
-    :param C_i:
-    :param rule:
-    :param x:
-    :return:
     """
     satisfies_all = x.copy()
     for attr, val in rule:
@@ -81,10 +79,6 @@ def rule_recall(C_i, rule, x):
 def rule_precision(C_i, rule, x):
     """
     Calculates the ratio between the #instances satisfying the antecedent of R and the consequent of R, and the #instances satisfying the antecedent of R.
-    :param C_i:
-    :param rule:
-    :param x:
-    :return:
     """
     pred = x.copy()
     for attr, val in rule:

@@ -1,0 +1,15 @@
+,Rule,Class,Precision,Recall,Coverage
+0,(1) if physician-fee-freeze == y and synfuels-corporation-cutback == n then,republican,100.0,84.09,40.0
+1,(2) if synfuels-corporation-cutback == y and physician-fee-freeze == y and adoption-of-the-budget-resolution == y and anti-satellite-test-ban == n then,democrat,100.0,1.03,0.54
+2,(3) if physician-fee-freeze == n then,democrat,96.15,95.88,50.27
+3,(4) if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == y then,republican,60.0,7.95,3.78
+4,(5) if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and duty-free-exports == y then,republican,0.0,1.14,0.54
+5,(6) if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and aid-to-nicaraguan-contras == n and anti-satellite-test-ban == y then,republican,0.0,1.14,0.54
+6,(7) if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and water-project-cost-sharing == n and handicapped-infants == y then,republican,0.0,1.14,0.54
+7,(8) if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and anti-satellite-test-ban == n and education-spending == n then,republican,0.0,1.14,0.54
+8,(9) if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and anti-satellite-test-ban == n and handicapped-infants == n and export-administration-act-south-africa == y then,republican,0.0,1.14,0.54
+9,(10) if synfuels-corporation-cutback == y and physician-fee-freeze == y and immigration == n and water-project-cost-sharing == y and export-administration-act-south-africa == n and superfund-right-to-sue == y then,republican,0.0,1.14,0.54
+10,(11) if synfuels-corporation-cutback == y and physician-fee-freeze == y and handicapped-infants == y and adoption-of-the-budget-resolution == n and education-spending == y and water-project-cost-sharing == y then,republican,0.0,1.14,0.54
+11,(12) if synfuels-corporation-cutback == y and physician-fee-freeze == y and el-salvador-aid == n and adoption-of-the-budget-resolution == n then,democrat,0.0,1.03,0.54
+12,(13) if export-administration-act-south-africa == n and superfund-right-to-sue == n and religious-groups-in-schools == y then,democrat,0.0,1.03,0.54
+13,(14) if export-administration-act-south-africa == n and synfuels-corporation-cutback == y and water-project-cost-sharing == n and handicapped-infants == n and physician-fee-freeze == y then,democrat,0.0,1.03,0.54

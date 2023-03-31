@@ -1,0 +1,46 @@
+,Rule,Class,Precision,Recall,Coverage
+0,(1) if odor == f then,p,100.0,73.65,28.48
+1,(2) if stalk-color-above-ring == g then,e,100.0,17.12,10.5
+2,(3) if stalk-color-above-ring == p and bruises == t then,e,100.0,16.58,10.17
+3,(4) if odor == p then,p,100.0,11.4,4.41
+4,(5) if odor == a then,e,100.0,11.34,6.95
+5,(6) if odor == l then,e,100.0,11.27,6.91
+6,(7) if ring-type == e and population == s then,e,100.0,10.98,6.73
+7,(8) if population == a then,e,100.0,10.91,6.69
+8,(9) if odor == c then,p,100.0,9.28,3.59
+9,(10) if stalk-color-below-ring == g and stalk-color-above-ring == w then,e,100.0,5.78,3.54
+10,(11) if spore-print-color == r then,p,100.0,3.26,1.26
+11,(12) if population == c then,p,100.0,2.41,0.93
+12,(13) if cap-color == e and stalk-color-above-ring == w and stalk-color-below-ring == p then,e,100.0,2.06,1.26
+13,(14) if stalk-color-below-ring == p and stalk-color-above-ring == w and cap-color == g then,e,100.0,1.84,1.13
+14,(15) if cap-color == n and stalk-color-below-ring == p and stalk-color-above-ring == w then,e,100.0,1.81,1.11
+15,(16) if cap-color == e and stalk-color-below-ring == w and stalk-color-above-ring == w then,e,100.0,1.66,1.02
+16,(17) if habitat == l and stalk-color-below-ring == n then,e,100.0,1.34,0.82
+17,(18) if cap-shape == s then,e,100.0,0.76,0.47
+18,(19) if cap-color == g and stalk-color-above-ring == w and cap-surface == y and stalk-color-below-ring == w and stalk-shape == t then,e,100.0,0.76,0.47
+19,(20) if cap-color == n and habitat == d and stalk-color-above-ring == w and stalk-color-below-ring == w and gill-color == n then,e,100.0,0.54,0.33
+20,(21) if cap-color == n and gill-color == w and stalk-color-below-ring == w and stalk-shape == t and stalk-color-above-ring == w then,e,100.0,0.54,0.33
+21,(22) if stalk-surface-above-ring == y and cap-color == n then,e,100.0,0.51,0.31
+22,(23) if gill-color == u and stalk-color-above-ring == w and cap-color == n and stalk-color-below-ring == w then,e,100.0,0.47,0.29
+23,(24) if gill-color == p and cap-color == n and stalk-root == b and stalk-color-below-ring == w and stalk-color-above-ring == w then,e,100.0,0.43,0.27
+24,(25) if habitat == u and cap-surface == f and cap-shape == x and spore-print-color == n then,e,100.0,0.36,0.22
+25,(26) if habitat == u and cap-surface == f and cap-shape == f and spore-print-color == n then,e,100.0,0.33,0.2
+26,(27) if habitat == u and gill-color == g and spore-print-color == k then,e,100.0,0.25,0.16
+27,(28) if cap-color == g and gill-color == n and cap-surface == f and stalk-color-below-ring == w and bruises == t and stalk-color-above-ring == w then,e,100.0,0.25,0.16
+28,(29) if ring-number == t and cap-color == c then,e,100.0,0.22,0.13
+29,(30) if ring-number == t and habitat == p and cap-color == p then,e,100.0,0.22,0.13
+30,(31) if ring-number == t and cap-color == n and bruises == t then,e,100.0,0.22,0.13
+31,(32) if cap-color == g and gill-color == w and cap-surface == f and stalk-color-above-ring == w and stalk-color-below-ring == w then,e,100.0,0.22,0.13
+32,(33) if ring-number == t and cap-color == g then,e,100.0,0.18,0.11
+33,(34) if habitat == u and cap-surface == f and spore-print-color == k and cap-shape == f and gill-color == n then,e,100.0,0.11,0.07
+34,(35) if cap-color == g and stalk-color-above-ring == w and population == y and stalk-color-below-ring == w and gill-color == u and cap-surface == f then,e,100.0,0.11,0.07
+35,(36) if gill-color == p and cap-color == g and stalk-color-below-ring == w and population == v and cap-surface == f and bruises == t and stalk-color-above-ring == w then,e,100.0,0.11,0.07
+36,(37) if habitat == u and cap-surface == f and cap-shape == f and gill-color == k and spore-print-color == k then,e,100.0,0.07,0.04
+37,(38) if gill-color == u and cap-color == g and stalk-color-above-ring == w and stalk-color-below-ring == w and bruises == t and spore-print-color == k and cap-shape == f then,e,100.0,0.04,0.02
+38,(39) if cap-color == g and gill-color == u and stalk-color-above-ring == w and stalk-color-below-ring == w and bruises == t and cap-shape == x and population == v and cap-surface == f then,e,100.0,0.04,0.02
+39,(40) if habitat == u and cap-surface == f and spore-print-color == k and gill-color == n and cap-shape == x then,e,0.0,0.14,0.09
+40,(41) if habitat == u and cap-surface == f and gill-color == p and cap-shape == x and spore-print-color == k then,e,0.0,0.14,0.09
+41,(42) if cap-color == g and stalk-color-above-ring == w and population == y and stalk-color-below-ring == w and stalk-shape == t and cap-surface == f and gill-color == p then,e,0.0,0.14,0.09
+42,(43) if cap-color == g and habitat == u and gill-color == k and cap-shape == x and spore-print-color == k then,e,0.0,0.07,0.04
+43,(44) if habitat == u and population == y and cap-shape == f and gill-color == p and spore-print-color == k then,e,0.0,0.07,0.04
+44,(45) if cap-color == g and habitat == u and spore-print-color == k and gill-color == p and cap-shape == f and population == v then,e,0.0,0.04,0.02

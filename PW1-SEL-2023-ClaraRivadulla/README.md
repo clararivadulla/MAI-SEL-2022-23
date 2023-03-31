@@ -21,7 +21,11 @@ The datasets inside the `data` folder are:
 
 ### How to execute the code
 
-1. Open the folder containing the code of the project (*source*) in the terminal `cd <root_folder_of_project>/`
+Before running the code for the first time, you must change the path written in the 8th line
+of the `main.py` file to the one where you’ve stored the folder containing the unzipped project.
+Once the path is changed, you must follow the next steps:
+
+1. Open the folder containing the code of the project (*source*) in the terminal `cd <root_folder_of_project>/source`
 2. Create a virtual environment using Python `python3 -m venv venv/`
 3. Open the virtual environment `source venv/bin/activate`
 4. Install the required dependencies `pip install -r requirements.txt`

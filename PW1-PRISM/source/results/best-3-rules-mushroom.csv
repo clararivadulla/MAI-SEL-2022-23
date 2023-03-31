@@ -1,4 +1,0 @@
-,Rule,Class,Precision,Recall,Coverage
-0,if odor == f then,p,100.0,73.65,28.48
-1,if stalk-color-above-ring == g then,e,100.0,17.12,10.5
-2,if stalk-color-above-ring == p and bruises == t then,e,100.0,16.58,10.17

@@ -1,4 +1,0 @@
-,Rule,Class,Precision,Recall,Coverage
-0,if safety == low then,unacc,100.0,48.8,33.94
-1,if persons == 2 and safety == high then,unacc,100.0,15.71,10.93
-2,if safety == med and persons == 2 then,unacc,100.0,14.98,10.42

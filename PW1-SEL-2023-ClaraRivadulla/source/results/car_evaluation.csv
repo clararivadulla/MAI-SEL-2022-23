@@ -1,0 +1,232 @@
+,Rule,Class,Precision,Recall,Coverage
+0,(1) if safety == low then,unacc,100.0,48.8,33.94
+1,(2) if persons == 2 and safety == high then,unacc,100.0,15.71,10.93
+2,(3) if safety == med and persons == 2 then,unacc,100.0,14.98,10.42
+3,(4) if maint == low and buying == med and safety == med and lug_boot == big and persons == 4 then,good,100.0,6.0,0.22
+4,(5) if buying == low and maint == med and persons == 4 and safety == high and lug_boot == small then,good,100.0,6.0,0.22
+5,(6) if maint == low and buying == med and safety == high and persons == 4 and lug_boot == small then,good,100.0,6.0,0.22
+6,(7) if buying == low and maint == low and safety == med and lug_boot == big and persons == 4 then,good,100.0,6.0,0.22
+7,(8) if buying == low and maint == med and safety == med and persons == 4 and lug_boot == big then,good,100.0,6.0,0.22
+8,(9) if safety == high and buying == low and lug_boot == big and persons == 4 and maint == low then,vgood,100.0,5.88,0.22
+9,(10) if safety == high and buying == low and maint == med and lug_boot == big and persons == more then,vgood,100.0,5.88,0.22
+10,(11) if safety == high and buying == med and maint == med and lug_boot == big and persons == 4 then,vgood,100.0,5.88,0.22
+11,(12) if safety == high and buying == low and persons == 4 and maint == high and lug_boot == big then,vgood,100.0,5.88,0.22
+12,(13) if safety == high and buying == med and maint == low and persons == 4 and lug_boot == big then,vgood,100.0,5.88,0.22
+13,(14) if safety == high and buying == med and maint == med and persons == more and lug_boot == big then,vgood,100.0,5.88,0.22
+14,(15) if safety == high and buying == low and maint == low and persons == more and lug_boot == big then,vgood,100.0,5.88,0.22
+15,(16) if maint == low and buying == low and persons == more and safety == med and lug_boot == big then,good,100.0,4.0,0.14
+16,(17) if safety == high and persons == 4 and maint == high and buying == med then,acc,100.0,3.44,0.8
+17,(18) if safety == med and persons == 4 and buying == med and maint == med then,acc,100.0,3.12,0.72
+18,(19) if safety == high and persons == 4 and maint == vhigh and buying == low then,acc,100.0,3.12,0.72
+19,(20) if safety == high and persons == 4 and buying == med and maint == vhigh then,acc,100.0,3.12,0.72
+20,(21) if safety == high and persons == 4 and buying == high and maint == low then,acc,100.0,2.81,0.65
+21,(22) if persons == 4 and safety == high and buying == high and maint == high then,acc,100.0,2.81,0.65
+22,(23) if safety == high and persons == 4 and maint == med and buying == high then,acc,100.0,2.81,0.65
+23,(24) if persons == 4 and maint == low and buying == vhigh and safety == high then,acc,100.0,2.81,0.65
+24,(25) if safety == med and persons == 4 and buying == low and maint == high then,acc,100.0,2.5,0.58
+25,(26) if safety == med and buying == vhigh and persons == 4 and lug_boot == small then,unacc,100.0,1.35,0.94
+26,(27) if safety == med and persons == 4 and buying == high and lug_boot == small then,unacc,100.0,1.35,0.94
+27,(28) if buying == vhigh and maint == high and persons == more and safety == high then,unacc,100.0,1.14,0.8
+28,(29) if maint == vhigh and safety == high and buying == high and persons == 4 then,unacc,100.0,1.14,0.8
+29,(30) if maint == vhigh and buying == high and persons == more and safety == med then,unacc,100.0,0.94,0.65
+30,(31) if safety == med and buying == vhigh and maint == high and persons == more then,unacc,100.0,0.94,0.65
+31,(32) if maint == vhigh and safety == high and buying == high and persons == more then,unacc,100.0,0.94,0.65
+32,(33) if buying == vhigh and persons == 4 and safety == high and maint == vhigh then,unacc,100.0,0.94,0.65
+33,(34) if safety == med and persons == more and maint == low and buying == vhigh and lug_boot == big then,acc,100.0,0.94,0.22
+34,(35) if safety == med and persons == more and buying == med and maint == high and lug_boot == big then,acc,100.0,0.94,0.22
+35,(36) if safety == med and persons == 4 and buying == med and maint == vhigh and lug_boot == big then,acc,100.0,0.94,0.22
+36,(37) if safety == med and persons == 4 and lug_boot == big and maint == low and buying == vhigh then,acc,100.0,0.94,0.22
+37,(38) if safety == med and persons == more and buying == high and maint == high and lug_boot == big then,acc,100.0,0.94,0.22
+38,(39) if buying == low and lug_boot == small and safety == high and maint == high and persons == 4 then,acc,100.0,0.94,0.22
+39,(40) if maint == high and buying == vhigh and persons == 4 and safety == high then,unacc,100.0,0.83,0.58
+40,(41) if safety == med and maint == med and buying == high and lug_boot == big and persons == 4 then,acc,100.0,0.62,0.14
+41,(42) if persons == more and maint == med and buying == vhigh and safety == high and doors == 4 then,acc,100.0,0.62,0.14
+42,(43) if safety == med and persons == more and maint == med and buying == high and lug_boot == big then,acc,100.0,0.62,0.14
+43,(44) if maint == med and safety == high and buying == med and persons == 4 and lug_boot == small then,acc,100.0,0.62,0.14
+44,(45) if safety == med and persons == 4 and maint == low and buying == high and lug_boot == big then,acc,100.0,0.62,0.14
+45,(46) if safety == med and persons == 4 and maint == vhigh and doors == 3 and lug_boot == med then,unacc,100.0,0.31,0.22
+46,(47) if safety == med and persons == 4 and maint == vhigh and doors == 2 and lug_boot == med then,unacc,100.0,0.31,0.22
+47,(48) if safety == med and persons == 4 and buying == vhigh and lug_boot == med and maint == high then,unacc,100.0,0.31,0.22
+48,(49) if safety == med and persons == 4 and maint == vhigh and buying == vhigh and lug_boot == big then,unacc,100.0,0.31,0.22
+49,(50) if safety == med and persons == 4 and maint == vhigh and lug_boot == small and buying == low then,unacc,100.0,0.31,0.22
+50,(51) if safety == med and lug_boot == small and persons == more and buying == high and maint == high then,unacc,100.0,0.31,0.22
+51,(52) if safety == med and persons == 4 and maint == high and buying == med and lug_boot == small then,unacc,100.0,0.31,0.22
+52,(53) if safety == med and persons == more and lug_boot == small and maint == vhigh and buying == low then,unacc,100.0,0.31,0.22
+53,(54) if safety == med and persons == more and lug_boot == small and maint == low and buying == high then,unacc,100.0,0.31,0.22
+54,(55) if safety == med and persons == 4 and buying == high and maint == vhigh and lug_boot == big then,unacc,100.0,0.31,0.22
+55,(56) if safety == med and buying == vhigh and persons == 4 and maint == high and lug_boot == big then,unacc,100.0,0.31,0.22
+56,(57) if safety == med and persons == 4 and buying == vhigh and lug_boot == med and maint == vhigh then,unacc,100.0,0.21,0.14
+57,(58) if safety == med and buying == med and maint == vhigh and lug_boot == small and doors == 3 then,unacc,100.0,0.21,0.14
+58,(59) if safety == med and buying == vhigh and maint == med and persons == more and lug_boot == small then,unacc,100.0,0.21,0.14
+59,(60) if doors == 2 and persons == more and lug_boot == small and safety == high and maint == low then,unacc,100.0,0.21,0.14
+60,(61) if safety == med and doors == 2 and persons == more and buying == low and lug_boot == small then,unacc,100.0,0.1,0.07
+61,(62) if safety == med and buying == med and lug_boot == small and maint == vhigh and doors == 4 then,unacc,100.0,0.1,0.07
+62,(63) if persons == more and safety == high and maint == vhigh and buying == med then,acc,75.0,2.5,0.58
+63,(64) if safety == high and persons == more and buying == med and maint == high then,acc,66.67,2.81,0.65
+64,(65) if safety == high and buying == med and lug_boot == med and maint == med and persons == more then,vgood,50.0,3.92,0.14
+65,(66) if persons == more and safety == high and buying == vhigh and maint == low then,acc,50.0,3.12,0.72
+66,(67) if buying == low and doors == 2 and safety == high and lug_boot == med and maint == low then,good,50.0,2.0,0.07
+67,(68) if safety == high and buying == low and maint == med and doors == 4 and lug_boot == big then,vgood,50.0,1.96,0.07
+68,(69) if safety == med and persons == 4 and lug_boot == med and doors == 4 and buying == high then,acc,50.0,0.62,0.14
+69,(70) if safety == med and persons == more and maint == med and doors == 4 and buying == vhigh then,acc,50.0,0.31,0.07
+70,(71) if buying == low and maint == med and persons == more and safety == med and lug_boot == big then,good,0.0,8.0,0.29
+71,(72) if maint == low and buying == low and persons == 4 and safety == high and lug_boot == small then,good,0.0,8.0,0.29
+72,(73) if safety == high and buying == low and persons == more and lug_boot == big and maint == high then,vgood,0.0,7.84,0.29
+73,(74) if buying == low and safety == high and maint == low and persons == more and lug_boot == small then,good,0.0,6.0,0.22
+74,(75) if safety == high and buying == low and lug_boot == med and persons == more and maint == low then,vgood,0.0,5.88,0.22
+75,(76) if maint == low and buying == med and persons == more and safety == med and doors == 3 then,good,0.0,4.0,0.14
+76,(77) if safety == high and buying == med and maint == low and persons == more and doors == 5more then,vgood,0.0,3.92,0.14
+77,(78) if safety == high and maint == low and buying == med and doors == 4 and persons == more then,vgood,0.0,3.92,0.14
+78,(79) if safety == high and lug_boot == med and persons == 4 and doors == 5more and buying == med then,vgood,0.0,3.92,0.14
+79,(80) if safety == high and persons == 4 and maint == med and buying == vhigh then,acc,0.0,3.75,0.87
+80,(81) if safety == med and persons == more and buying == low and maint == high then,acc,0.0,3.44,0.8
+81,(82) if buying == low and lug_boot == med and maint == med and persons == more and safety == med and doors == 3 then,good,0.0,2.0,0.07
+82,(83) if buying == low and maint == low and lug_boot == med and safety == med and doors == 4 and persons == 4 then,good,0.0,2.0,0.07
+83,(84) if buying == low and maint == med and lug_boot == med and persons == 4 and safety == med and doors == 4 then,good,0.0,2.0,0.07
+84,(85) if maint == low and buying == med and lug_boot == med and persons == 4 and safety == high and doors == 3 then,good,0.0,2.0,0.07
+85,(86) if buying == low and maint == med and persons == more and safety == high and lug_boot == small and doors == 4 then,good,0.0,2.0,0.07
+86,(87) if maint == low and buying == med and persons == more and safety == med and doors == 4 and lug_boot == med then,good,0.0,2.0,0.07
+87,(88) if buying == low and lug_boot == med and maint == low and persons == 4 and safety == high and doors == 3 then,good,0.0,2.0,0.07
+88,(89) if buying == low and lug_boot == med and maint == med and doors == 5more and safety == med and persons == 4 then,good,0.0,2.0,0.07
+89,(90) if maint == low and buying == med and persons == more and safety == high and doors == 3 and lug_boot == small then,good,0.0,2.0,0.07
+90,(91) if buying == low and lug_boot == med and maint == low and safety == med and doors == 5more and persons == 4 then,good,0.0,2.0,0.07
+91,(92) if buying == low and maint == med and persons == more and doors == 5more and lug_boot == med and safety == med then,good,0.0,2.0,0.07
+92,(93) if maint == low and buying == med and doors == 2 and safety == high and lug_boot == med and persons == 4 then,good,0.0,2.0,0.07
+93,(94) if buying == low and maint == med and safety == high and doors == 2 and lug_boot == med and persons == 4 then,good,0.0,2.0,0.07
+94,(95) if maint == low and buying == med and safety == med and doors == 5more and persons == more and lug_boot == big then,good,0.0,2.0,0.07
+95,(96) if buying == low and persons == more and maint == med and safety == high and doors == 5more and lug_boot == small then,good,0.0,2.0,0.07
+96,(97) if maint == low and lug_boot == med and doors == 4 and safety == med and persons == 4 and buying == med then,good,0.0,2.0,0.07
+97,(98) if persons == more and lug_boot == med and buying == low and maint == low and safety == med and doors == 4 then,good,0.0,2.0,0.07
+98,(99) if doors == 2 and persons == more and safety == high and buying == med and maint == low and lug_boot == med then,good,0.0,2.0,0.07
+99,(100) if doors == 2 and buying == low and maint == med and safety == high and persons == more and lug_boot == med then,good,0.0,2.0,0.07
+100,(101) if safety == high and buying == low and lug_boot == med and doors == 4 and persons == 4 and maint == low then,vgood,0.0,1.96,0.07
+101,(102) if safety == high and buying == low and lug_boot == med and maint == high and doors == 4 and persons == more then,vgood,0.0,1.96,0.07
+102,(103) if safety == high and buying == low and lug_boot == med and maint == med and persons == more and doors == 4 then,vgood,0.0,1.96,0.07
+103,(104) if safety == high and buying == low and lug_boot == med and doors == 5more and maint == high and persons == more then,vgood,0.0,1.96,0.07
+104,(105) if safety == high and buying == low and lug_boot == med and persons == 4 and maint == high and doors == 4 then,vgood,0.0,1.96,0.07
+105,(106) if safety == high and buying == low and maint == med and lug_boot == med and persons == more and doors == 5more then,vgood,0.0,1.96,0.07
+106,(107) if safety == high and buying == low and maint == med and doors == 3 and persons == 4 and lug_boot == big then,vgood,0.0,1.96,0.07
+107,(108) if safety == high and lug_boot == med and buying == low and persons == 4 and doors == 5more and maint == low then,vgood,0.0,1.96,0.07
+108,(109) if safety == high and lug_boot == med and buying == low and maint == med and doors == 3 and persons == more then,vgood,0.0,1.96,0.07
+109,(110) if safety == high and lug_boot == med and buying == med and doors == 4 and persons == 4 and maint == low then,vgood,0.0,1.96,0.07
+110,(111) if safety == high and lug_boot == med and persons == 4 and buying == low and maint == med and doors == 4 then,vgood,0.0,1.96,0.07
+111,(112) if safety == high and lug_boot == med and buying == med and maint == med and doors == 4 and persons == 4 then,vgood,0.0,1.96,0.07
+112,(113) if safety == high and lug_boot == med and buying == low and maint == high and doors == 5more and persons == 4 then,vgood,0.0,1.96,0.07
+113,(114) if buying == med and maint == low and doors == 3 and persons == more and safety == high and lug_boot == med then,vgood,0.0,1.96,0.07
+114,(115) if maint == vhigh and safety == med and persons == more and buying == vhigh then,unacc,0.0,1.25,0.87
+115,(116) if buying == vhigh and maint == vhigh and safety == high and persons == more then,unacc,0.0,1.25,0.87
+116,(117) if safety == high and persons == more and buying == high and maint == low and lug_boot == med then,acc,0.0,1.25,0.29
+117,(118) if persons == more and safety == high and buying == high and maint == high and lug_boot == med then,acc,0.0,1.25,0.29
+118,(119) if persons == more and safety == med and buying == med and maint == med and lug_boot == med then,acc,0.0,1.25,0.29
+119,(120) if persons == more and safety == high and buying == high and maint == med and lug_boot == med then,acc,0.0,1.25,0.29
+120,(121) if persons == more and safety == med and maint == low and buying == high and lug_boot == big then,acc,0.0,1.25,0.29
+121,(122) if safety == med and persons == more and buying == med and lug_boot == big and maint == vhigh then,acc,0.0,1.25,0.29
+122,(123) if safety == med and persons == 4 and maint == low and buying == med and lug_boot == small then,acc,0.0,1.25,0.29
+123,(124) if safety == med and persons == more and maint == med and lug_boot == big and buying == med then,acc,0.0,1.25,0.29
+124,(125) if safety == med and persons == 4 and lug_boot == big and buying == high and maint == high then,acc,0.0,1.25,0.29
+125,(126) if persons == more and safety == high and buying == high and lug_boot == big and maint == low then,acc,0.0,1.25,0.29
+126,(127) if safety == med and persons == 4 and lug_boot == big and maint == vhigh and buying == low then,acc,0.0,1.25,0.29
+127,(128) if safety == med and persons == more and buying == low and maint == vhigh and lug_boot == big then,acc,0.0,1.25,0.29
+128,(129) if safety == med and persons == 4 and maint == low and buying == low and lug_boot == small then,acc,0.0,1.25,0.29
+129,(130) if persons == more and safety == high and buying == high and maint == high and lug_boot == big then,acc,0.0,1.25,0.29
+130,(131) if persons == more and buying == low and maint == vhigh and safety == high and lug_boot == big then,acc,0.0,1.25,0.29
+131,(132) if persons == more and maint == med and buying == high and lug_boot == big and safety == high then,acc,0.0,1.25,0.29
+132,(133) if persons == more and buying == low and safety == high and maint == vhigh and lug_boot == med then,acc,0.0,1.25,0.29
+133,(134) if safety == med and persons == 4 and buying == med and maint == high and lug_boot == big then,acc,0.0,1.25,0.29
+134,(135) if persons == more and safety == high and lug_boot == small and doors == 3 and maint == med then,acc,0.0,0.94,0.22
+135,(136) if safety == med and persons == more and maint == low and lug_boot == med and buying == high then,acc,0.0,0.94,0.22
+136,(137) if persons == more and maint == med and safety == high and buying == vhigh and doors == 5more then,acc,0.0,0.94,0.22
+137,(138) if safety == med and persons == 4 and lug_boot == med and doors == 5more and buying == high then,acc,0.0,0.94,0.22
+138,(139) if persons == more and lug_boot == small and buying == low and safety == med and maint == low then,acc,0.0,0.94,0.22
+139,(140) if safety == med and persons == 4 and buying == low and doors == 2 and maint == med then,acc,0.0,0.62,0.14
+140,(141) if safety == med and persons == more and doors == 5more and buying == med and lug_boot == small then,acc,0.0,0.62,0.14
+141,(142) if safety == med and maint == med and buying == low and lug_boot == small and doors == 4 then,acc,0.0,0.62,0.14
+142,(143) if safety == med and doors == 2 and persons == more and lug_boot == small and buying == med then,unacc,0.0,0.42,0.29
+143,(144) if safety == med and lug_boot == small and persons == more and buying == high and maint == med then,unacc,0.0,0.42,0.29
+144,(145) if doors == 2 and persons == more and lug_boot == small and safety == high and maint == med then,unacc,0.0,0.42,0.29
+145,(146) if safety == med and persons == more and lug_boot == med and doors == 3 and buying == high and maint == med then,acc,0.0,0.31,0.07
+146,(147) if safety == med and persons == more and lug_boot == med and doors == 3 and maint == vhigh and buying == med then,acc,0.0,0.31,0.07
+147,(148) if safety == med and persons == more and lug_boot == med and buying == low and maint == vhigh and doors == 3 then,acc,0.0,0.31,0.07
+148,(149) if persons == more and maint == med and doors == 4 and lug_boot == small and safety == high and buying == med then,acc,0.0,0.31,0.07
+149,(150) if safety == med and persons == more and maint == med and lug_boot == small and buying == med and doors == 3 then,acc,0.0,0.31,0.07
+150,(151) if safety == med and persons == more and lug_boot == med and maint == low and buying == vhigh and doors == 3 then,acc,0.0,0.31,0.07
+151,(152) if safety == med and persons == more and maint == med and doors == 4 and lug_boot == small and buying == med then,acc,0.0,0.31,0.07
+152,(153) if safety == med and persons == 4 and lug_boot == med and buying == med and maint == low and doors == 3 then,acc,0.0,0.31,0.07
+153,(154) if safety == high and lug_boot == small and persons == more and buying == high and maint == low and doors == 4 then,acc,0.0,0.31,0.07
+154,(155) if safety == med and lug_boot == med and persons == more and doors == 5more and maint == vhigh and buying == med then,acc,0.0,0.31,0.07
+155,(156) if safety == med and lug_boot == med and persons == 4 and doors == 4 and buying == med and maint == high then,acc,0.0,0.31,0.07
+156,(157) if safety == med and persons == more and lug_boot == med and buying == low and maint == vhigh and doors == 4 then,acc,0.0,0.31,0.07
+157,(158) if safety == med and persons == 4 and maint == med and doors == 4 and buying == vhigh and lug_boot == big then,acc,0.0,0.31,0.07
+158,(159) if safety == med and lug_boot == med and persons == 4 and buying == low and doors == 3 and maint == low then,acc,0.0,0.31,0.07
+159,(160) if safety == med and lug_boot == med and persons == more and buying == high and maint == high and doors == 4 then,acc,0.0,0.31,0.07
+160,(161) if safety == med and lug_boot == med and persons == 4 and doors == 5more and buying == med and maint == high then,acc,0.0,0.31,0.07
+161,(162) if safety == med and lug_boot == med and persons == more and maint == low and doors == 2 and buying == med then,acc,0.0,0.31,0.07
+162,(163) if safety == med and persons == 4 and lug_boot == med and maint == vhigh and doors == 4 and buying == med then,acc,0.0,0.31,0.07
+163,(164) if safety == med and lug_boot == med and persons == more and doors == 5more and maint == low and buying == vhigh then,acc,0.0,0.31,0.07
+164,(165) if safety == med and lug_boot == med and buying == low and maint == vhigh and doors == 5more and persons == 4 then,acc,0.0,0.31,0.07
+165,(166) if safety == high and lug_boot == small and persons == more and buying == high and maint == high and doors == 4 then,acc,0.0,0.31,0.07
+166,(167) if safety == med and lug_boot == med and persons == more and buying == low and doors == 2 and maint == low then,acc,0.0,0.31,0.07
+167,(168) if safety == med and persons == 4 and lug_boot == med and buying == vhigh and maint == med and doors == 5more then,acc,0.0,0.31,0.07
+168,(169) if persons == more and lug_boot == small and buying == low and safety == high and maint == vhigh and doors == 5more then,acc,0.0,0.31,0.07
+169,(170) if persons == more and lug_boot == small and safety == high and buying == high and doors == 5more and maint == low then,acc,0.0,0.31,0.07
+170,(171) if maint == med and persons == more and buying == vhigh and doors == 3 and lug_boot == big and safety == med then,acc,0.0,0.31,0.07
+171,(172) if persons == more and maint == med and safety == high and buying == vhigh and doors == 3 and lug_boot == big then,acc,0.0,0.31,0.07
+172,(173) if persons == more and lug_boot == small and safety == high and buying == high and maint == high and doors == 5more then,acc,0.0,0.31,0.07
+173,(174) if safety == med and lug_boot == med and persons == more and buying == high and maint == high and doors == 5more then,acc,0.0,0.31,0.07
+174,(175) if maint == med and safety == med and buying == low and lug_boot == small and doors == 5more and persons == 4 then,acc,0.0,0.31,0.07
+175,(176) if maint == med and persons == more and lug_boot == med and safety == med and buying == vhigh and doors == 3 then,acc,0.0,0.31,0.07
+176,(177) if persons == more and lug_boot == small and safety == high and buying == low and maint == high and doors == 5more then,acc,0.0,0.31,0.07
+177,(178) if safety == med and lug_boot == med and persons == 4 and maint == low and doors == 2 and buying == low then,acc,0.0,0.31,0.07
+178,(179) if persons == more and lug_boot == small and safety == high and buying == high and maint == med and doors == 5more then,acc,0.0,0.31,0.07
+179,(180) if safety == med and lug_boot == med and persons == 4 and doors == 4 and buying == vhigh and maint == med then,acc,0.0,0.31,0.07
+180,(181) if persons == more and buying == low and lug_boot == small and safety == high and maint == vhigh and doors == 3 then,acc,0.0,0.31,0.07
+181,(182) if safety == med and lug_boot == med and persons == more and buying == high and maint == med and doors == 4 then,acc,0.0,0.31,0.07
+182,(183) if safety == med and lug_boot == med and buying == med and maint == vhigh and doors == 4 and persons == more then,acc,0.0,0.31,0.07
+183,(184) if safety == med and lug_boot == med and buying == low and maint == vhigh and doors == 5more and persons == more then,acc,0.0,0.31,0.07
+184,(185) if persons == more and lug_boot == small and safety == high and buying == high and doors == 3 and maint == low then,acc,0.0,0.31,0.07
+185,(186) if lug_boot == med and safety == med and persons == 4 and maint == vhigh and doors == 5more and buying == med then,acc,0.0,0.31,0.07
+186,(187) if buying == low and maint == med and safety == med and doors == 3 and persons == 4 and lug_boot == med then,acc,0.0,0.31,0.07
+187,(188) if persons == more and lug_boot == small and doors == 4 and safety == high and buying == low and maint == high then,acc,0.0,0.31,0.07
+188,(189) if persons == more and maint == med and buying == low and safety == med and doors == 5more and lug_boot == small then,acc,0.0,0.31,0.07
+189,(190) if lug_boot == med and doors == 2 and maint == med and persons == more and buying == low and safety == med then,acc,0.0,0.31,0.07
+190,(191) if lug_boot == med and persons == 4 and buying == med and maint == med and safety == high and doors == 3 then,acc,0.0,0.31,0.07
+191,(192) if persons == more and safety == high and lug_boot == small and buying == high and maint == high and doors == 3 then,acc,0.0,0.31,0.07
+192,(193) if lug_boot == med and maint == high and doors == 3 and buying == low and safety == high then,acc,0.0,0.31,0.07
+193,(194) if persons == more and safety == high and maint == med and lug_boot == small and buying == high and doors == 4 then,acc,0.0,0.31,0.07
+194,(195) if lug_boot == med and doors == 2 and safety == high and maint == med and buying == med and persons == 4 then,acc,0.0,0.31,0.07
+195,(196) if safety == med and lug_boot == med and persons == 4 and maint == low and buying == vhigh and doors == 5more then,acc,0.0,0.31,0.07
+196,(197) if persons == more and buying == med and safety == med and maint == high and lug_boot == med and doors == 3 then,acc,0.0,0.31,0.07
+197,(198) if persons == more and safety == high and doors == 2 and lug_boot == med and buying == low and maint == high then,acc,0.0,0.31,0.07
+198,(199) if safety == med and persons == 4 and buying == low and doors == 4 and maint == vhigh and lug_boot == med then,acc,0.0,0.31,0.07
+199,(200) if persons == more and lug_boot == small and buying == med and maint == low and doors == 4 and safety == med then,acc,0.0,0.31,0.07
+200,(201) if maint == med and persons == more and safety == high and buying == med and doors == 5more and lug_boot == small then,acc,0.0,0.31,0.07
+201,(202) if safety == med and doors == 3 and buying == high and maint == high and persons == more and lug_boot == med then,acc,0.0,0.31,0.07
+202,(203) if doors == 2 and lug_boot == med and buying == vhigh and maint == med and persons == more and safety == high then,acc,0.0,0.31,0.07
+203,(204) if buying == low and lug_boot == small and doors == 3 and maint == med and safety == med and persons == 4 then,acc,0.0,0.31,0.07
+204,(205) if doors == 2 and maint == low and buying == med and safety == med and persons == 4 and lug_boot == med then,acc,0.0,0.31,0.07
+205,(206) if buying == low and maint == vhigh and doors == 4 and lug_boot == small and persons == more and safety == high then,acc,0.0,0.31,0.07
+206,(207) if safety == med and doors == 2 and persons == more and maint == low and buying == vhigh then,unacc,0.0,0.21,0.14
+207,(208) if safety == med and doors == 2 and lug_boot == med and persons == more and buying == high and maint == high then,unacc,0.0,0.1,0.07
+208,(209) if safety == med and doors == 2 and lug_boot == med and persons == 4 and buying == high and maint == high then,unacc,0.0,0.1,0.07
+209,(210) if safety == med and doors == 2 and lug_boot == med and persons == 4 and buying == vhigh and maint == med then,unacc,0.0,0.1,0.07
+210,(211) if safety == med and doors == 2 and lug_boot == med and persons == more and buying == med and maint == high then,unacc,0.0,0.1,0.07
+211,(212) if safety == med and doors == 2 and persons == 4 and buying == high and lug_boot == med and maint == med then,unacc,0.0,0.1,0.07
+212,(213) if safety == med and doors == 2 and lug_boot == med and persons == more and maint == med and buying == high then,unacc,0.0,0.1,0.07
+213,(214) if safety == med and persons == 4 and doors == 3 and lug_boot == med and buying == high and maint == high then,unacc,0.0,0.1,0.07
+214,(215) if safety == med and doors == 2 and persons == 4 and buying == vhigh and maint == low and lug_boot == med then,unacc,0.0,0.1,0.07
+215,(216) if safety == med and persons == 4 and doors == 3 and lug_boot == med and buying == vhigh and maint == med then,unacc,0.0,0.1,0.07
+216,(217) if safety == med and doors == 2 and lug_boot == med and persons == more and maint == vhigh and buying == med then,unacc,0.0,0.1,0.07
+217,(218) if safety == med and doors == 2 and persons == 4 and buying == med and maint == high and lug_boot == med then,unacc,0.0,0.1,0.07
+218,(219) if safety == med and persons == more and lug_boot == small and buying == med and maint == high and doors == 4 then,unacc,0.0,0.1,0.07
+219,(220) if safety == med and lug_boot == med and maint == low and doors == 3 and persons == 4 and buying == vhigh then,unacc,0.0,0.1,0.07
+220,(221) if doors == 2 and persons == more and buying == low and maint == vhigh and lug_boot == small and safety == high then,unacc,0.0,0.1,0.07
+221,(222) if safety == med and doors == 2 and lug_boot == med and persons == more and buying == vhigh and maint == med then,unacc,0.0,0.1,0.07
+222,(223) if safety == med and maint == low and buying == high and persons == 4 and lug_boot == med and doors == 2 then,unacc,0.0,0.1,0.07
+223,(224) if safety == med and buying == med and maint == high and doors == 3 and persons == more and lug_boot == small then,unacc,0.0,0.1,0.07
+224,(225) if doors == 2 and persons == more and buying == low and maint == high and lug_boot == small and safety == high then,unacc,0.0,0.1,0.07
+225,(226) if safety == med and persons == 4 and doors == 3 and lug_boot == med and buying == high and maint == low then,unacc,0.0,0.1,0.07
+226,(227) if safety == med and doors == 2 and maint == vhigh and buying == low and persons == more and lug_boot == med then,unacc,0.0,0.1,0.07
+227,(228) if safety == med and buying == med and persons == 4 and maint == vhigh and doors == 2 and lug_boot == small then,unacc,0.0,0.1,0.07
+228,(229) if maint == high and doors == 3 and buying == med and persons == 4 and lug_boot == med and safety == med then,unacc,0.0,0.1,0.07
+229,(230) if lug_boot == small and persons == more and buying == vhigh and maint == low and doors == 5more and safety == med then,unacc,0.0,0.1,0.07
+230,(231) if doors == 2 and maint == high and buying == high and lug_boot == small and persons == more and safety == high then,unacc,0.0,0.1,0.07
