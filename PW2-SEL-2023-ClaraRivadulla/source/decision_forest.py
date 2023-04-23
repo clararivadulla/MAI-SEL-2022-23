@@ -1,21 +1,21 @@
 import numpy as np
 from node import Node
 
-class CART:
+class DecisionTree:
     def __init__(self, max_depth=2, min_samples_split=2):
         self.max_depth = max_depth
         self.min_samples_split = min_samples_split
 
     def fit(self, X, y):
+        #print(X)
         self.n_classes = len(np.unique(y))
         self.tree = self.grow_tree(X, y)
 
     def gini(self, y):
         n_samples = len(y)
-        return 1 - sum([(np.sum(y == c) / n_samples) ** 2 for c in range(self.n_classes)])
+        return 1 - sum([((np.sum(y == c)) / n_samples) ** 2 for c in range(self.n_classes)])
 
     def grow_tree(self, X, y, depth=0):
-
         n_samples, n_features = X.shape
         n_labels = len(np.unique(y))
         #print(n_features)
@@ -23,8 +23,9 @@ class CART:
         #print(X)
 
         if depth >= self.max_depth or n_labels == 1 or n_samples < self.min_samples_split:
-            y = y.astype(int)
-            return Node(value=np.bincount(y).argmax()) # Return the most common class
+            most_common_value = np.unique(y, return_counts=True)[0][np.unique(y, return_counts=True)[1].argmax()]
+            #print(most_common_value)
+            return Node(value=most_common_value) # Return the most common class
 
         min_gini = np.inf
         best_j = 0
@@ -38,7 +39,7 @@ class CART:
             if not isinstance(X[0, j], str):
                 if len(splits) > 1:
                     splits = (splits[:-1] + splits[1:]) / 2
-            #print("SPLITS MIDTERRM: " + str(splits))
+            #print("SPLITS MIDTERM: " + str(splits))
             for split in splits:
                 if isinstance(X[0, j], str):
                     left_idxs = np.where(X[:, j] == split)[0]
@@ -50,11 +51,7 @@ class CART:
                 #print("len right: " + str(len(right_idxs)))
                 #print("gini left: " + str(self.gini(y[left_idxs])))
                 #print("gini right: " + str(self.gini(y[right_idxs])))
-                if len(right_idxs) == 0 or len(left_idxs) == 0:
-                    y = y.astype(int)
-                    return Node(value=np.bincount(y).argmax())
-                else:
-                    gini = (len(left_idxs)/n_samples)*self.gini(y[left_idxs]) + (len(right_idxs)/n_samples)*self.gini(y[right_idxs])
+                gini = (len(left_idxs)/n_samples)*self.gini(y[left_idxs]) + (len(right_idxs)/n_samples)*self.gini(y[right_idxs])
                 #print("gini: " + str(gini))
                 if gini < min_gini:
                     min_gini = gini
