@@ -26,16 +26,16 @@ class CART:
 
         if depth >= self.max_depth or n_labels == 1 or n_samples < self.min_samples_split:
             y = y.astype(int)
-            return Node(value=np.bincount(y).argmax()) # Return the most common class
+            return Node(pred_class=np.bincount(y).argmax()) # Return the most common class
 
         min_gini = np.inf
         best_j = 0
         best_split = np.unique(X[:, best_j])[0]
         features_idx = np.random.choice(n_features, size=self.F, replace=False)
         #print(features_idx)
-        # Loop over every feature j and split every value it takes
+        # Loop over every feature j and split every pred_class it takes
         for j in features_idx:
-            # The midpoint between each pair of sorted adjacent values is taken as a possible split-point
+            # The midpoint between each pair of sorted adjacent pred_classs is taken as a possible split-point
             splits = np.unique(X[:, j])
             #print("SPLITS: " + str(splits))
             if not isinstance(X[0, j], str):
@@ -55,7 +55,7 @@ class CART:
                 #print("gini right: " + str(self.gini(y[right_idxs])))
                 if len(right_idxs) == 0 or len(left_idxs) == 0:
                     y = y.astype(int)
-                    return Node(value=np.bincount(y).argmax())
+                    return Node(pred_class=np.bincount(y).argmax())
                 else:
                     gini = (len(left_idxs)/n_samples)*self.gini(y[left_idxs]) + (len(right_idxs)/n_samples)*self.gini(y[right_idxs])
                 #print("gini: " + str(gini))
@@ -87,7 +87,7 @@ class CART:
                 node = node.left
             else:
                 node = node.right
-        return node.value
+        return node.pred_class
 
 class RF:
     def __init__(self, F=2, NT=2, max_depth=2):
