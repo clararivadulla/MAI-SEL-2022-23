@@ -16,12 +16,14 @@ def preprocess(path, dataset_name):
         df.rename({'bruises%3F': 'bruises'}, axis=1, inplace=True)
     if 'V10' in df.columns:
         df.rename({'V10': 'class'}, axis=1, inplace=True)
+    if 'variety' in df.columns:
+        df.rename({'variety': 'class'}, axis=1, inplace=True)
     if 'B' in df.columns:
         df.rename({'B': 'class'}, axis=1, inplace=True)
 
     df.columns = df.columns.str.replace(' ', '')
     df = df.replace('?', np.nan)
-    df = df.dropna().reset_index()
+    df = df.dropna().reset_index(drop=True)
     train, test = train_test_split(df, test_size=0.2)
 
     return train, test
