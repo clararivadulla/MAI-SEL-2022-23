@@ -1,7 +1,7 @@
 import numpy as np
 from node import Node
 from collections import Counter
-
+from sklearn.utils import resample
 
 def most_common_class(y):
     counter = Counter(y)
@@ -105,8 +105,11 @@ class RandomForest:
 
     def fit(self, X, y):
         for i in range(self.NT):
+            random_indices = np.random.randint(len(X), size=len(X))
+            bootstrap_X = X[random_indices]
+            bootstrap_y = y[random_indices]
             tree = DecisionTree(max_depth=self.max_depth, F=self.F)
-            tree.fit(X, y)
+            tree.fit(bootstrap_X, bootstrap_y)
             self.trees.append(tree)
 
     def predict(self, X):
