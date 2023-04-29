@@ -4,6 +4,7 @@ from decision_forest import DecisionTree, DecisionForest
 from random_forest import RandomForest
 import string
 import math
+import pandas as pd
 
 np.random.seed(0)
 
@@ -21,12 +22,26 @@ def accuracy(predicted, y):
             correct += 1
     return correct / len(predicted)
 
+def dict_to_pandas(data):
+    df_list = []
+    for method, nt_dict in data.items():
+        for nt, f_dict in nt_dict.items():
+            for f, accuracy in f_dict.items():
+                df_list.append((method, nt, f, accuracy))
+
+    df = pd.DataFrame(df_list, columns=['method', 'NT', 'F', 'accuracy'])
+    return df
+
+def plot_accuracies(df):
+    df_DF = df[df['method'] == 'DF']
+    # TODO: plots
 
 if __name__ == '__main__':
 
     datasets = ['iris', 'congressional_voting_records', 'tic_tac_toe_endgame', 'car_evaluation', 'mushroom']
 
     for dataset in datasets:
+
         title = dataset.replace('_', ' ')
         title = string.capwords(title, sep=None)
         print(
@@ -37,30 +52,38 @@ if __name__ == '__main__':
         X_train = train.drop(['class'], axis=1).to_numpy()
         y_test = test['class'].to_numpy()
         X_test = test.drop(['class'], axis=1).to_numpy()
-        m = X_train.shape[1] # Total number of features
-
+        m = X_train.shape[1]  # Total number of features
 
         NT_list = [1, 10, 25, 50, 75, 100]
         F_RF = [1, 2, int(math.log(m + 1, 2)), int(math.sqrt(m))]
-        F_DF = [int(m/4), int(m/2), int(3 * (m/4)), ]
+        F_DF = [int(m / 4), int(m / 2), int(3 * (m / 4)), ]
 
-            # Decision Forest
+        accuracies = {'DF': {},
+                      'RF': {}}
+
         for NT in NT_list:
+            accuracies['DF'][NT] = {}
+            accuracies['RF'][NT] = {}
+            # Decision Forest
             for F in F_DF:
+                accuracies['DF'][NT][F] = {}
                 df = DecisionForest(max_depth=100, F=F, NT=NT)
                 df.fit(X_train, y_train)
                 y_pred = df.predict(X_test)
                 acc_df = accuracy(y_pred, y_test) * 100
-                print(f'Accuracy DF | F={F} | NT={NT}: ' + str(round(acc_df, 2)) + '%')
+                accuracies['DF'][NT][F] = acc_df
+                print(f'Accuracy DF | NT={NT} | F={F}: ' + str(round(acc_df, 2)) + '%')
 
-
-
+            # Random Forest
             for F in F_RF:
+                accuracies['RF'][NT][F] = {}
                 rf = RandomForest(max_depth=100, F=F, NT=NT)
                 rf.fit(X_train, y_train)
                 y_pred = rf.predict(X_test)
                 acc_rf = accuracy(y_pred, y_test) * 100
-                print(f'Accuracy RF | F={F} | NT={NT}: ' + str(round(acc_rf, 2)) + '%')
+                accuracies['RF'][NT][F] = acc_rf
+                print(f'Accuracy RF | NT={NT} | F={F}: ' + str(round(acc_rf, 2)) + '%')
 
+        df = dict_to_pandas(accuracies)
+        df.to_csv(f'results/{dataset}_accuracies.csv')
         print('')
-

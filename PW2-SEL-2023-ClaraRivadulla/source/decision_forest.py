@@ -82,15 +82,14 @@ class DecisionTree:
                 else:
                     left_idxs = np.where(X[:, feature_idx] <= threshold)[0]
                     right_idxs = np.where(X[:, feature_idx] > threshold)[0]
-                # print(left_idxs, right_idxs)
                 gini = (len(left_idxs) / n_samples) * self.gini(y[left_idxs]) + (
                         len(right_idxs) / n_samples) * self.gini(y[right_idxs])
                 if gini < best_gini:
                     best_gini = gini
                     best_idx = feature_idx
                     best_threshold = threshold
-        # print(best_gini, best_idx, best_threshold)
         return best_idx, best_threshold
+    # TODO: Prune
 
 
 class DecisionForest:
@@ -106,7 +105,6 @@ class DecisionForest:
         for i in range(self.NT):
             features = np.random.choice(n_features, size=self.F, replace=False)
             X_subset = X[:, features]
-            # print("SUBSET:" + str(X_subset))
             tree = DecisionTree(max_depth=self.max_depth)
             tree.fit(X_subset, y)
             self.trees.append((tree, features))
@@ -114,11 +112,8 @@ class DecisionForest:
     def predict(self, X):
         predictions = []
         for tree, features in self.trees:
-            # print(tree, features)
             X_subset = X[:, features]
-            # print("SUBSET TO PRED:" + str(X_subset))
             prediction = tree.predict(X_subset)
-            # print("PREDICTION:" + str(prediction))
             predictions.append(prediction)
         y_pred = []
         for i in range(len(predictions[0])):

@@ -84,16 +84,15 @@ class DecisionTree:
                 else:
                     left_idxs = np.where(X[:, feature_idx] <= threshold)[0]
                     right_idxs = np.where(X[:, feature_idx] > threshold)[0]
-                # print(left_idxs, right_idxs)
                 gini = (len(left_idxs) / n_samples) * self.gini(y[left_idxs]) + (
                         len(right_idxs) / n_samples) * self.gini(y[right_idxs])
                 if gini < best_gini:
                     best_gini = gini
                     best_idx = feature_idx
                     best_threshold = threshold
-        # print(best_gini, best_idx, best_threshold)
         return best_idx, best_threshold
 
+    # TODO: Prune
 
 class RandomForest:
     def __init__(self, max_depth=2, min_impurity=1e-7, NT=2, F=2):
