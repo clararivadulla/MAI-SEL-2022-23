@@ -3,7 +3,7 @@ import time
 
 import numpy as np
 from preprocessing import preprocess
-from decision_forest import DecisionTree, DecisionForest
+from decision_forest import DecisionTree, DecisionForest, feature_importances
 from random_forest import RandomForest
 import string
 import math
@@ -49,7 +49,9 @@ if __name__ == '__main__':
 
         train, test = preprocess(path, dataset)
         y_train = train['class'].to_numpy()
-        X_train = train.drop(['class'], axis=1).to_numpy()
+        X_train = train.drop(['class'], axis=1)
+        feature_names = X_train.columns.to_numpy()
+        X_train = X_train.to_numpy()
         y_test = test['class'].to_numpy()
         X_test = test.drop(['class'], axis=1).to_numpy()
         m = X_train.shape[1]  # Total number of features
@@ -62,7 +64,8 @@ if __name__ == '__main__':
         time_elapsed = round(end - start, 2)
         acc_dt = accuracy(y_pred, y_test) * 100
         print(f'Accuracy DT: ' + str(round(acc_dt, 2)) + '%' + ' Time elapsed: ' + str(time_elapsed) + 's')
-
+        print('-------------------------------------------------------')
+        
         NT_list = [1, 10, 25, 50, 75, 100]
         F_RF = [1, 2, int(math.log(m + 1, 2)), int(math.sqrt(m))]
         F_DF = [int(m / 4), int(m / 2), int(3 * (m / 4)), ]
@@ -75,7 +78,7 @@ if __name__ == '__main__':
             # Decision Forest
             for F in F_DF:
                 accuracies['DF'][NT][F] = {}
-                df = DecisionForest(max_depth=100, F=F, NT=NT)
+                df = DecisionForest(max_depth=100, F=F, NT=NT, feature_names=feature_names)
                 start = time.time()
                 df.fit(X_train, y_train)
                 y_pred = df.predict(X_test)
@@ -85,11 +88,13 @@ if __name__ == '__main__':
                 acc_df = round(acc_df, 2)
                 accuracies['DF'][NT][F] = (acc_df, time_elapsed)
                 print(f'Accuracy DF | NT={NT} | F={F}: ' + str(acc_df) + '%' + ' Time elapsed: ' + str(time_elapsed) + 's')
+                df.print_most_important_features()
+                print('-------------------------------------------------------')
 
             # Random Forest
             for F in F_RF:
                 accuracies['RF'][NT][F] = {}
-                rf = RandomForest(max_depth=100, F=F, NT=NT)
+                rf = RandomForest(max_depth=100, F=F, NT=NT, feature_names=feature_names)
                 start = time.time()
                 rf.fit(X_train, y_train)
                 y_pred = rf.predict(X_test)

@@ -7,6 +7,19 @@ def most_common_class(y):
     counter = Counter(y)
     return counter.most_common(1)[0][0]
 
+def feature_importances(tree):
+    importances = np.zeros(tree.features)
+
+    def traverse_tree(node, importance):
+        if node.feature_idx is not None:
+            importances[node.feature_idx] += importance
+            traverse_tree(node.left, importance * (1 - node.impurity))
+            traverse_tree(node.right, importance * (1 - node.impurity))
+
+    traverse_tree(tree.root, 1)
+    importances /= np.sum(importances)
+    return importances
+
 
 class DecisionTree:
 
@@ -17,7 +30,7 @@ class DecisionTree:
     def fit(self, X, y):
         self.classes = np.unique(y)
         self.features = X.shape[1]
-        self.tree = self.grow_tree(X, y)
+        self.root = self.grow_tree(X, y)
 
     def gini(self, y):
         n_samples = len(y)
@@ -28,7 +41,7 @@ class DecisionTree:
         return [self.predict_x(x) for x in X]
 
     def predict_x(self, x):
-        node = self.tree
+        node = self.root
         while node.left:
             if isinstance(x[node.feature_idx], str):
                 if x[node.feature_idx] == node.threshold:
@@ -45,7 +58,7 @@ class DecisionTree:
     def grow_tree(self, X, y, depth=0):
         node = Node(pred_class=most_common_class(y))
         if depth < self.max_depth:
-            feature_idx, threshold = self.best_split(X, y)
+            feature_idx, threshold, impurity = self.best_split(X, y)
             if feature_idx is not None:
                 if isinstance(X[0, feature_idx], str):
                     left_idxs = np.where(X[:, feature_idx] == threshold)[0]
@@ -55,6 +68,7 @@ class DecisionTree:
                     right_idxs = np.where(X[:, feature_idx] > threshold)[0]
                 node.feature_idx = feature_idx
                 node.threshold = threshold
+                node.impurity = impurity
                 node.left = self.grow_tree(X[left_idxs], y[left_idxs], depth + 1)
                 node.right = self.grow_tree(X[right_idxs], y[right_idxs], depth + 1)
         return node
@@ -62,7 +76,7 @@ class DecisionTree:
     def best_split(self, X, y):
         m = len(y)
         if m <= 1:
-            return None, None
+            return None, None, None
         parent = [np.sum(y == c) for c in self.classes]
         best_gini = 1.0 - sum((n / m) ** 2 for n in parent)
         best_threshold = None
@@ -90,25 +104,35 @@ class DecisionTree:
                         best_gini = gini
                         best_idx = feature_idx
                         best_threshold = threshold
-        return best_idx, best_threshold
+        return best_idx, best_threshold, best_gini
     # TODO: Prune
 
 
 class DecisionForest:
-    def __init__(self, max_depth=100, min_impurity=1e-7, NT=2, F=2):
+    def __init__(self, max_depth=100, min_impurity=1e-7, NT=2, F=2, feature_names=None):
         self.max_depth = max_depth
         self.min_impurity = min_impurity
         self.NT = NT
         self.F = F
         self.trees = []
+        self.feature_names = feature_names
+        self.overall_feature_importances = {}
 
     def fit(self, X, y):
         n_samples, n_features = X.shape
+        for i in self.feature_names:
+            self.overall_feature_importances[i] = 0
         for i in range(self.NT):
             features = np.random.choice(n_features, size=self.F, replace=False)
+            features_n = self.feature_names[features]
             X_subset = X[:, features]
             tree = DecisionTree(max_depth=self.max_depth)
             tree.fit(X_subset, y)
+            importances = feature_importances(tree)
+            i = 0
+            for feature in features_n:
+                self.overall_feature_importances[feature] = importances[i]
+                i += 1
             self.trees.append((tree, features))
 
     def predict(self, X):
@@ -122,3 +146,8 @@ class DecisionForest:
             counter = Counter([p[i] for p in predictions])
             y_pred.append(counter.most_common(1)[0][0])
         return y_pred
+
+    def print_most_important_features(self):
+        sorted_items = sorted(self.overall_feature_importances.items(), key=lambda x: x[1], reverse=True)
+        for i, (key, value) in enumerate(sorted_items[:3], 1):
+            print(f"{i}. {key}")

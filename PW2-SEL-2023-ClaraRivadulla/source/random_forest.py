@@ -97,12 +97,13 @@ class DecisionTree:
     # TODO: Prune
 
 class RandomForest:
-    def __init__(self, max_depth=100, min_impurity=1e-7, NT=2, F=2):
+    def __init__(self, max_depth=100, min_impurity=1e-7, NT=2, F=2, feature_names=None):
         self.max_depth = max_depth
         self.min_impurity = min_impurity
         self.NT = NT
         self.F = F
         self.trees = []
+        self.feature_names = feature_names
 
     def fit(self, X, y):
         for i in range(self.NT):
