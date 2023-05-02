@@ -10,8 +10,9 @@ def most_common_class(y):
 
 class DecisionTree:
 
-    def __init__(self, max_depth=2, F=2):
+    def __init__(self, max_depth=100, min_impurity=1e-7, F=2):
         self.max_depth = max_depth
+        self.min_impurity = min_impurity
         self.F = F
 
     def fit(self, X, y):
@@ -70,32 +71,33 @@ class DecisionTree:
         best_idx = None
 
         features_idxs = np.random.choice(n_features, size=self.F, replace=False)
-        # Loop over every feature j and split every pred_class it takes
-        for feature_idx in features_idxs:
-            # The midpoint between each pair of sorted adjacent pred_classs is taken as a possible split-point
-            thresholds = np.unique(X[:, feature_idx])
-            if not isinstance(X[0, feature_idx], str):
-                if len(thresholds) > 1:
-                    thresholds = (thresholds[:-1] + thresholds[1:]) / 2
-            for threshold in thresholds:
-                if isinstance(X[0, feature_idx], str):
-                    left_idxs = np.where(X[:, feature_idx] == threshold)[0]
-                    right_idxs = np.where(X[:, feature_idx] != threshold)[0]
-                else:
-                    left_idxs = np.where(X[:, feature_idx] <= threshold)[0]
-                    right_idxs = np.where(X[:, feature_idx] > threshold)[0]
-                gini = (len(left_idxs) / n_samples) * self.gini(y[left_idxs]) + (
-                        len(right_idxs) / n_samples) * self.gini(y[right_idxs])
-                if gini < best_gini:
-                    best_gini = gini
-                    best_idx = feature_idx
-                    best_threshold = threshold
+        if best_gini >= self.min_impurity:
+            # Loop over every feature j and split every pred_class it takes
+            for feature_idx in features_idxs:
+                # The midpoint between each pair of sorted adjacent pred_classs is taken as a possible split-point
+                thresholds = np.unique(X[:, feature_idx])
+                if not isinstance(X[0, feature_idx], str):
+                    if len(thresholds) > 1:
+                        thresholds = (thresholds[:-1] + thresholds[1:]) / 2
+                for threshold in thresholds:
+                    if isinstance(X[0, feature_idx], str):
+                        left_idxs = np.where(X[:, feature_idx] == threshold)[0]
+                        right_idxs = np.where(X[:, feature_idx] != threshold)[0]
+                    else:
+                        left_idxs = np.where(X[:, feature_idx] <= threshold)[0]
+                        right_idxs = np.where(X[:, feature_idx] > threshold)[0]
+                    gini = (len(left_idxs) / n_samples) * self.gini(y[left_idxs]) + (
+                            len(right_idxs) / n_samples) * self.gini(y[right_idxs])
+                    if gini < best_gini:
+                        best_gini = gini
+                        best_idx = feature_idx
+                        best_threshold = threshold
         return best_idx, best_threshold
 
     # TODO: Prune
 
 class RandomForest:
-    def __init__(self, max_depth=2, min_impurity=1e-7, NT=2, F=2):
+    def __init__(self, max_depth=100, min_impurity=1e-7, NT=2, F=2):
         self.max_depth = max_depth
         self.min_impurity = min_impurity
         self.NT = NT
