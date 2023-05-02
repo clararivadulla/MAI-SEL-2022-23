@@ -54,7 +54,7 @@ if __name__ == '__main__':
         X_test = test.drop(['class'], axis=1).to_numpy()
         m = X_train.shape[1]  # Total number of features
 
-        dt = DecisionTree(max_depth=1000, min_impurity=sys.float_info.epsilon)
+        dt = DecisionTree(max_depth=1000)
         start = time.time()
         dt.fit(X_train, y_train)
         y_pred = dt.predict(X_test)
@@ -102,5 +102,5 @@ if __name__ == '__main__':
 
         df = dict_to_pandas(accuracies)
         print(df)
-        df.to_csv(f'results/{dataset}_results.csv')
+        df.to_csv(f'results/{dataset}_results.csv', index=False)
         print('')
