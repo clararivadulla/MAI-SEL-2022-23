@@ -8,6 +8,7 @@ from random_forest import RandomForest
 import string
 import math
 import pandas as pd
+import random
 
 np.random.seed(0)
 
@@ -67,14 +68,16 @@ if __name__ == '__main__':
         print('-------------------------------------------------------')
 
         NT_list = [1, 10, 25, 50, 75, 100]
-        F_RF = [1, 2, int(math.log(m + 1, 2)), int(math.sqrt(m))]
-        F_DF = [int(m / 4), int(m / 2), int(3 * (m / 4)), m]
+        F_RF = [1, 2, int(math.log(m + 1, 2)), int(math.sqrt(m)), m] # Number of features to test with RF
+        F_DF = [int(m / 4), int(m / 2), int(3 * (m / 4)), int(random.uniform(1, m)), m] # Number of features to test with DF
 
         accuracies = {'DF': {}, 'RF': {}}
 
         for NT in NT_list:
+
             accuracies['DF'][NT] = {}
             accuracies['RF'][NT] = {}
+
             # Decision Forest
             for F in F_DF:
                 accuracies['DF'][NT][F] = {}

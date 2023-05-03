@@ -10,7 +10,7 @@ def plot_results(df, dataset_name, method='DF'):
     title = dataset_name.replace('_', ' ')
     title = string.capwords(title, sep=None)
     NTs = df.NT.unique()
-    colors = ['r', 'b', 'g', 'y', 'o', 'c']
+    colors = ['r', 'b', 'g', 'y', 'c']
     if method=='DF':
         df = df[df['method'] == 'DF']
         Fs = df.F.unique()
