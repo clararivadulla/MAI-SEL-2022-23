@@ -7,6 +7,7 @@ def most_common_class(y):
     counter = Counter(y)
     return counter.most_common(1)[0][0]
 
+
 def feature_importances(tree):
     importances = np.zeros(tree.features)
 
@@ -74,11 +75,11 @@ class DecisionTree:
         return node
 
     def best_split(self, X, y):
-        m = len(y)
-        if m <= 1:
+        len_y = len(y)
+        if len_y <= 1:
             return None, None, None
         parent = [np.sum(y == c) for c in self.classes]
-        best_gini = 1.0 - sum((n / m) ** 2 for n in parent)
+        best_gini = 1.0 - sum((n / len_y) ** 2 for n in parent)
         best_threshold = None
         best_idx = None
         n_samples = X.shape[0]
@@ -105,7 +106,6 @@ class DecisionTree:
                         best_idx = feature_idx
                         best_threshold = threshold
         return best_idx, best_threshold, best_gini
-    # TODO: Prune
 
 
 class DecisionForest:

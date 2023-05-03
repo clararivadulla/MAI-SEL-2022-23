@@ -3,9 +3,11 @@ from node import Node
 from collections import Counter
 from sklearn.utils import resample
 
+
 def most_common_class(y):
     counter = Counter(y)
     return counter.most_common(1)[0][0]
+
 
 def feature_importances(tree):
     importances = np.zeros(tree.features)
@@ -108,7 +110,6 @@ class DecisionTree:
                         best_threshold = threshold
         return best_idx, best_threshold, best_gini
 
-    # TODO: Prune
 
 class RandomForest:
     def __init__(self, max_depth=100, min_impurity=1e-7, NT=2, F=2, feature_names=None):
@@ -151,4 +152,3 @@ class RandomForest:
         sorted_items = sorted(self.overall_feature_importances.items(), key=lambda x: x[1], reverse=True)
         for i, (key, value) in enumerate(sorted_items[:3], 1):
             print(f"{i}. {key}")
-

@@ -3,7 +3,7 @@ import string
 import pandas as pd
 from matplotlib import pyplot as plt
 
-datasets = ['iris']
+datasets = ['iris', 'tic_tac_toe_endgame', 'abalone', 'mushroom']
 
 
 def plot_results(df, dataset_name, method='DF'):

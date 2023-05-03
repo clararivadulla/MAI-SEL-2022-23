@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
         NT_list = [1, 10, 25, 50, 75, 100]
         F_RF = [1, 2, int(math.log(m + 1, 2)), int(math.sqrt(m))]
-        F_DF = [int(m / 4), int(m / 2), int(3 * (m / 4)), ]
+        F_DF = [int(m / 4), int(m / 2), int(3 * (m / 4)), m]
 
         accuracies = {'DF': {}, 'RF': {}}
 
@@ -106,6 +106,7 @@ if __name__ == '__main__':
                 print(f'Accuracy RF | NT={NT} | F={F}: ' + str(acc_rf) + '%' + ' Time elapsed: ' + str(time_elapsed) + 's')
                 rf.print_most_important_features()
                 print('-------------------------------------------------------')
+
         df = dict_to_pandas(accuracies)
         print(df)
         df.to_csv(f'results/{dataset}_results.csv', index=False)
