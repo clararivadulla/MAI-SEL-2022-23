@@ -137,7 +137,7 @@ class DecisionForest:
             features = np.random.choice(n_features, size=self.F, replace=False)
             features_n = self.feature_names[features]
             X_subset = X[:, features]
-            tree = DecisionTree(max_depth=self.max_depth)
+            tree = DecisionTree(max_depth=self.max_depth, min_impurity=self.min_impurity)
             tree.fit(X_subset, y) # Fit the tree with a subset of X (taking into consideration the F random features chosen
             importances = feature_importances(tree) # Compute the importance of the tree's features
             # Update the overall feature importances
